@@ -1,8 +1,5 @@
-const missionProblemText =
-  "Too many students care about protecting the planet but never get the chance to turn that passion into real action. Environmental education is often limited to lectures and worksheets, while today's sustainability challenges demand creativity, collaboration, and hands-on problem solving. Young people deserve more than awareness—they deserve opportunities to build skills, confidence, and leadership.";
-
-const missionActionText =
-  "EcoRise is a student-led 501(c)(3) nonprofit based in Naperville, Illinois, dedicated to making sustainability education accessible, engaging, and action-oriented. Through our Summer Camp, Green Dream Challenge, workshops, and service projects, we empower K–12 students to learn by doing, develop innovative environmental solutions, and create lasting impact in their communities. We believe the next generation of environmental leaders is already here—they just need the opportunity to rise.";
+const missionText =
+  "EcoRise is a student-led 501(c)(3) nonprofit based in Naperville, Illinois, founded in April 2026 to transform students' passion for protecting the planet into meaningful action. We believe environmental education should go beyond lectures and worksheets by providing hands-on experiences that build knowledge, confidence, and leadership. Through our Summer Camp, Green Dream Challenge, workshops, and service projects, we empower K–12 students to learn by doing, develop innovative environmental solutions, and create lasting impact in their communities—because the next generation of environmental leaders is already here; they just need the opportunity to rise.";
 
 export function AboutMissionSection() {
   return (
@@ -34,26 +31,10 @@ export function AboutMissionSection() {
         </h2>
         <div className="mx-auto mt-4 h-0.5 w-32 rounded-full bg-gradient-to-r from-[#1b4332] via-[#4a7c44] to-[#f2c029]" />
 
-        <div className="mt-10 space-y-5 sm:mt-12 sm:space-y-6">
+        <div className="mt-10 sm:mt-12">
           <div className="rounded-2xl bg-white px-6 py-7 shadow-[0_8px_40px_rgba(27,67,50,0.1)] sm:px-8 sm:py-8">
-            <p className="text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-              {missionProblemText}
-            </p>
-          </div>
-
-          <div className="relative overflow-hidden rounded-full bg-gradient-to-r from-slate-100 via-[#fef9e7] to-[#f2c029]/30 px-6 py-4 sm:px-8 sm:py-5">
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute -right-6 top-1/2 h-20 w-20 -translate-y-1/2 rounded-full bg-[#f2c029]/25 blur-sm sm:h-24 sm:w-24"
-            />
-            <p className="relative text-center text-base font-medium text-[#1b4332] sm:text-lg">
-              In April 2026, we decided to change that.
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-white px-6 py-7 shadow-[0_8px_40px_rgba(27,67,50,0.1)] sm:px-8 sm:py-8">
-            <p className="text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-              {missionActionText}
+            <p className="text-pretty text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+              {missionText}
             </p>
           </div>
         </div>

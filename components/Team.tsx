@@ -78,12 +78,15 @@ export function Team() {
   return (
     <section id="team" className="scroll-mt-24 bg-white py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <AnimateOnScroll className="mx-auto mb-16 flex max-w-3xl flex-col items-center text-center">
+        <AnimateOnScroll className="mx-auto mb-16 flex max-w-4xl flex-col items-center text-center">
           <h2 className="text-4xl font-bold text-[#1b4332] sm:text-5xl">Our Team</h2>
-          <p className="text-pretty mt-5 text-base leading-relaxed text-slate-600 sm:text-lg">
-            EcoRise is powered by passionate student leaders, dedicated mentors,
-            and community partners working together to inspire the next generation
-            of environmental changemakers.
+          <p className="mt-5 flex flex-col items-center text-base leading-relaxed text-slate-600 sm:text-lg">
+            <span className="sm:whitespace-nowrap">
+              EcoRise is powered by passionate student leaders, dedicated mentors, and community partners
+            </span>
+            <span className="sm:whitespace-nowrap">
+              working together to inspire the next generation of environmental changemakers.
+            </span>
           </p>
         </AnimateOnScroll>
 

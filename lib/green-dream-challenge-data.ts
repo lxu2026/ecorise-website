@@ -38,7 +38,6 @@ export const gdcHeroPhotos = [
 ] as const;
 
 export const gdcAbout = {
-  eyebrow: "The Challenge",
   title: "What is Green Dream Challenge?",
   intro: [
     "Green Dream Challenge invites students to turn sustainability ideas into real projects.",

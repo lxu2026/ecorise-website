@@ -197,8 +197,11 @@ export type CurrentSponsor = {
 export const sponsorsPage = {
   heroEyebrow: "Powered by our community",
   heroTitleLead: "The people behind",
-  heroDescription:
-    "EcoRise is powered by the generosity of businesses, families, and community partners who believe in the next generation. Every donation helps provide hands-on sustainability education, leadership opportunities, and environmental programs for students.",
+  heroDescription: [
+    "EcoRise is powered by the generosity of businesses, families, and community",
+    "partners who believe in the next generation. Every donation helps provide hands-on",
+    "sustainability education, leadership opportunities, and environmental programs for students.",
+  ],
   ctaLabel: "See perks of becoming a sponsor",
   ctaHref: "#sponsorship-tiers",
 } as const;

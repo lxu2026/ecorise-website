@@ -102,10 +102,7 @@ export function GreenDreamChallengePage() {
       <section id="about-gdc" className="scroll-mt-24 bg-white pt-20 pb-10 lg:pt-28 lg:pb-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-ecorise-600">
-              {gdcAbout.eyebrow}
-            </p>
-            <h2 className="mt-3 text-3xl font-bold text-[#1b4332] sm:text-4xl">
+            <h2 className="text-3xl font-bold text-[#1b4332] sm:text-4xl">
               {gdcAbout.title}
             </h2>
             <div className="mt-4 space-y-3">

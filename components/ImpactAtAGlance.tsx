@@ -4,21 +4,6 @@ import { AnimatedNumber } from "@/components/ui/AnimatedCounter";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 import { impactAtAGlanceContent, type ImpactGlanceCard } from "@/lib/homepage-data";
 
-const IMPACT_BADGE_DOT_COLOR = "#4a7c44";
-
-function ImpactBadge() {
-  return (
-    <span className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-slate-600">
-      <span
-        className="h-2.5 w-2.5 shrink-0 rounded-full motion-safe:animate-pulse"
-        style={{ backgroundColor: IMPACT_BADGE_DOT_COLOR }}
-        aria-hidden="true"
-      />
-      Impact
-    </span>
-  );
-}
-
 function ImpactCard({
   card,
   delay = 0,
@@ -32,9 +17,7 @@ function ImpactCard({
   return (
     <AnimateOnScroll delay={delay}>
       <article className="flex h-full flex-col rounded-2xl bg-white p-6 shadow-md ring-1 ring-slate-100 sm:p-7">
-        <ImpactBadge />
-
-        <p className="mt-5 font-display text-4xl font-bold tracking-tight text-[#1b4332] sm:text-5xl">
+        <p className="font-display text-4xl font-bold tracking-tight text-[#1b4332] sm:text-5xl">
           <AnimatedNumber
             value={value}
             prefix={prefix}
@@ -56,13 +39,19 @@ function ImpactCard({
 
 export function ImpactAtAGlance() {
   const { title, subtitle, cards } = impactAtAGlanceContent;
+  const dashIndex = subtitle.indexOf("—");
+  const subtitleLead = subtitle.slice(0, dashIndex + 1);
+  const subtitleRest = subtitle.slice(dashIndex + 1).trim();
 
   return (
     <section id="impact" className="scroll-mt-24 bg-slate-50 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <AnimateOnScroll className="mx-auto max-w-3xl text-center">
+        <AnimateOnScroll className="mx-auto max-w-5xl text-center">
           <h2 className="font-display text-4xl font-bold text-[#1b4332] sm:text-5xl">{title}</h2>
-          <p className="mt-5 text-lg leading-relaxed text-slate-600 sm:text-xl">{subtitle}</p>
+          <p className="mt-5 flex flex-col items-center text-lg leading-relaxed text-slate-600 sm:text-xl">
+            <span>{subtitleLead}</span>
+            <span className="sm:whitespace-nowrap">{subtitleRest}</span>
+          </p>
         </AnimateOnScroll>
 
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-7">

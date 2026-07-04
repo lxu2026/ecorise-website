@@ -74,8 +74,12 @@ function SponsorsHero() {
           </span>
         </h1>
 
-        <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
-          {sponsorsPage.heroDescription}
+        <p className="mx-auto mt-6 flex max-w-3xl flex-col items-center text-base leading-relaxed text-white/75 sm:text-lg">
+          {sponsorsPage.heroDescription.map((line) => (
+            <span key={line} className="sm:whitespace-nowrap">
+              {line}
+            </span>
+          ))}
         </p>
 
         <div className="mt-10">
@@ -212,13 +216,14 @@ function SponsorshipTiersSection() {
   return (
     <section id="sponsorship-tiers" className="scroll-mt-28 bg-white py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-[#1b4332] sm:text-4xl">
             Sponsorship tiers
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
-            The more you give, the more visibility you receive. Here is what each
-            tier unlocks.
+          <p className="mt-4 flex justify-center text-base leading-relaxed text-slate-600 sm:text-lg">
+            <span className="sm:whitespace-nowrap">
+              The more you give, the more visibility you receive. Here is what each tier unlocks.
+            </span>
           </p>
         </div>
 
@@ -251,13 +256,14 @@ function InKindSection() {
   return (
     <section className="border-t border-slate-200 bg-[#f8faf8] py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-[#1b4332] sm:text-4xl">
             In-kind donations
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-slate-600">
-            These local partners support EcoRise through food, services, and
-            other in-kind contributions.
+          <p className="mt-4 flex justify-center text-base leading-relaxed text-slate-600 sm:text-lg">
+            <span className="sm:whitespace-nowrap">
+              These local partners support EcoRise through food, services, and other in-kind contributions.
+            </span>
           </p>
         </div>
 
