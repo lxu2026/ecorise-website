@@ -2,7 +2,7 @@ const missionProblemText =
   "Too many students are passionate about protecting the planet but never get the chance to turn that enthusiasm into real skills. Environmental literacy is often treated as an elective—something squeezed into a unit or a poster on a wall—while the urgency of climate change and local sustainability challenges grows every year. Young people deserve more than awareness; they deserve hands-on experience that builds confidence and leadership.";
 
 const missionActionText =
-  "EcoRise is a student-run 501(c)(3) nonprofit based in Naperville, Illinois, dedicated to making sustainability education accessible, engaging, and youth-led. Through our Summer Camp, Green Dream Challenge, workshops, and office hours, we give K–12 students the tools to explore STEM, develop environmental projects, and share their ideas with the community. Every program is designed by students who believe the next generation of environmental leaders is already here—we're just giving them the platform to rise.";
+  "EcoRise is a student-run 501(c)(3) nonprofit based in Naperville, Illinois, dedicated to making sustainability education accessible, engaging, and youth-led. Through our Summer Camp, Green Dream Challenge, workshops, and office hours, we give K–12 students the tools to learn hands-on, develop environmental projects, and share their ideas with the community. Every program is designed by students who believe the next generation of environmental leaders is already here—we're just giving them the platform to rise.";
 
 export function AboutMissionSection() {
   return (

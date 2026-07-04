@@ -101,12 +101,12 @@ function SpeakerSidebar({
 
       {speaker.quote ? (
         <div className="mt-5 rounded-xl bg-[#1b4332] p-5 text-center text-white">
-          <p className="text-sm leading-relaxed sm:text-base">
-            <span className="mr-1 align-top font-serif text-2xl leading-none text-[#c1eb84]">
+          <p className="text-pretty text-xs leading-relaxed sm:text-sm">
+            <span className="mr-1 align-top font-serif text-xl leading-none text-[#c1eb84]">
               &ldquo;
             </span>
             {speaker.quote}
-            <span className="ml-1 align-bottom font-serif text-2xl leading-none text-[#c1eb84]">
+            <span className="ml-1 align-bottom font-serif text-xl leading-none text-[#c1eb84]">
               &rdquo;
             </span>
           </p>

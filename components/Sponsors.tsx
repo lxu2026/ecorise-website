@@ -7,6 +7,7 @@ import {
   type CurrentSponsor,
   type SponsorTier,
 } from "@/lib/homepage-data";
+import { officeHoursContact } from "@/lib/office-hours-faqs-data";
 import Image from "next/image";
 
 const tierOrder: SponsorTier[] = ["gold", "silver", "bronze"];
@@ -287,7 +288,7 @@ function InKindSection() {
         <p className="mt-14 text-center text-sm text-slate-600">
           Interested in partnering with EcoRise?{" "}
           <a
-            href="/#contact"
+            href={`mailto:${officeHoursContact.email}`}
             className="font-semibold text-ecorise-600 transition-colors hover:text-ecorise-700"
           >
             Get in touch

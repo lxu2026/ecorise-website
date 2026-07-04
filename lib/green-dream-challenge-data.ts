@@ -40,8 +40,10 @@ export const gdcHeroPhotos = [
 export const gdcAbout = {
   eyebrow: "The Challenge",
   title: "What is Green Dream Challenge?",
-  intro:
-    "Green Dream Challenge invites students to turn sustainability ideas into real projects. Compete solo or with a team of up to 3 members and choose the path that fits your strengths.",
+  intro: [
+    "Green Dream Challenge invites students to turn sustainability ideas into real projects.",
+    "Compete solo or with a team of up to 3 members and choose the path that fits your strengths.",
+  ],
 };
 
 export const gdcProjectPaths = [

@@ -321,6 +321,11 @@ export const footerSocialLinks = [
     icon: "instagram",
   },
   {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/ecorisenfp/?viewAsMember=true",
+    icon: "linkedin",
+  },
+  {
     label: "Discord",
     href: "https://discord.gg/88CFQUDQD8",
     icon: "discord",

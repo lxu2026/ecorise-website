@@ -108,9 +108,16 @@ export function GreenDreamChallengePage() {
             <h2 className="mt-3 text-3xl font-bold text-[#1b4332] sm:text-4xl">
               {gdcAbout.title}
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
-              {gdcAbout.intro}
-            </p>
+            <div className="mt-4 space-y-3">
+              {gdcAbout.intro.map((paragraph) => (
+                <p
+                  key={paragraph}
+                  className="text-pretty text-sm leading-relaxed text-slate-600 sm:text-base"
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2">

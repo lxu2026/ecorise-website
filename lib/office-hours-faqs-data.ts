@@ -33,7 +33,7 @@ export const officeHoursFaqs = {
     {
       question: "What is EcoRise?",
       answer:
-        "EcoRise empowers K–12 students through sustainability education, STEM innovation, and community action. We help students turn environmental ideas into real projects that make a difference.",
+        "EcoRise empowers K–12 students through sustainability education, youth-led innovation, and community action. We help students turn environmental ideas into real projects that make a difference.",
     },
     {
       question: "What is Green Dream Challenge?",

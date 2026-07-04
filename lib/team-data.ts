@@ -155,6 +155,11 @@ export const instructors: TeamMember[] = [
     bio: "Rishi brings a thoughtful teaching style to EcoRise programs and helps students connect classroom concepts to real sustainability challenges in their schools and neighborhoods.",
   },
   {
+    name: "Sahasra Racharla",
+    role: "Instructor",
+    bio: "Sahasra is passionate about youth environmental education and helps students explore sustainability topics through engaging lessons, thoughtful discussion, and hands-on projects.",
+  },
+  {
     name: "Simi Dawani",
     role: "Instructor",
     bio: "Simi is dedicated to making environmental education engaging and accessible, guiding students as they learn about climate resilience, green habits, and planetary leadership.",
