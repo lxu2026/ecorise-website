@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --background: #c1eb84;
+  --foreground: #1b4332;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+
+  /* EcoRise brand greens */
+  --color-ecorise-mint: #c1eb84;
+  --color-ecorise-50: #c1eb84;
+  --color-ecorise-100: #b0e06a;
+  --color-ecorise-200: #a8dc78;
+  --color-ecorise-300: #a0be8b;
+  --color-ecorise-400: #8eb58d;
+  --color-ecorise-500: #4a7c44;
+  --color-ecorise-600: #315630;
+  --color-ecorise-700: #2d5a3d;
+  --color-ecorise-800: #1e4820;
+  --color-ecorise-900: #1b4332;
+  --color-ecorise-950: #0f2419;
+  --color-ecorise-yellow: #f2c029;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: clip;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: clip;
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@utility animate-marquee-left {
+  animation: marquee-left 45s linear infinite;
+}
+
+@utility animate-marquee-right {
+  animation: marquee-right 45s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-left,
+  .animate-marquee-right {
+    animation: none;
+  }
+}

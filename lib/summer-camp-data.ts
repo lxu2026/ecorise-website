@@ -1,0 +1,228 @@
+export type CampSpeaker = {
+  name: string;
+  title: string;
+  talkTitle: string;
+  talkDescription: string;
+  quote?: string;
+  photoLabel?: string;
+  photo?: string;
+};
+
+export type CampWeek = {
+  id: string;
+  week: number;
+  shortLabel: string;
+  title: string;
+  date: string;
+  location: string;
+  summary: string;
+  speakerLabel?: string;
+  featuredSpeaker: CampSpeaker;
+  guestSpeaker?: CampSpeaker;
+  heroImage?: string;
+  galleryImages?: { src: string; alt: string }[];
+  photoLabel: string;
+  photoGradient: string;
+};
+
+export const campHero = {
+  eyebrow: "Summer 2026",
+  titleMain: "EcoRise",
+  titleAccent: "Camp",
+  description:
+    "Our five-part sustainability journey takes students from environmental discovery to community-ready projects through hands-on workshops, field activities, and expert mentorship.",
+  registerUrl:
+    "https://docs.google.com/forms/d/1Qyo-zPQjg0JwHgR-iv1rh7OnY3IB1g0cJ0oHkbT0tWY/viewform",
+  heroCollages: ["/images/summer-camp/hero-collage-2.png"],
+  stats: [
+    { value: "5", label: "Camp Weeks" },
+    { value: "7", label: "Guest Speakers" },
+    { value: "100+", label: "Students Taught" },
+  ],
+};
+
+export const campIntro = {
+  title: "2026 Sustainability Camp",
+  description:
+    "Each camp session builds on the previous one, creating a comprehensive environmental leadership journey that takes K–8th grade students from exploring local ecosystems to presenting at the Green Dream Showcase.",
+};
+
+export const campWeeks: CampWeek[] = [
+  {
+    id: "week-1",
+    week: 1,
+    shortLabel: "Sustainability & Carbon Footprint",
+    title: "Sustainability & Carbon Footprint",
+    date: "June 13, 2026",
+    location: "95th Street Library, Naperville",
+    summary:
+      "In Session 1, students kicked off EcoRise Summer Camp by learning what sustainability means and how everyday choices shape our carbon footprint. After exploring emissions, energy use, and personal impact with camp instructors, students built simple action plans to live more sustainably at home and school.",
+    speakerLabel: "Guest Speaker",
+    featuredSpeaker: {
+      name: "Ben Mjolsness",
+      title: "Sustainability Manager, City of Naperville",
+      talkTitle: "",
+      talkDescription: "",
+      quote:
+        "It's exciting to see the youth change the world for the better.",
+      photo: "/images/summer-camp/week-1/ben-mjolsness.jpg",
+    },
+    heroImage: "/images/summer-camp/week-1/hero-instructor.jpg",
+    galleryImages: [
+      {
+        src: "/images/summer-camp/week-1/workshop-1.jpg",
+        alt: "Students working together during a sustainability workshop",
+      },
+      {
+        src: "/images/summer-camp/week-1/workshop-2.jpg",
+        alt: "Students collaborating on a camp activity",
+      },
+      {
+        src: "/images/home/hero/camp-mentor.jpg",
+        alt: "EcoRise camp mentor guiding students during a session",
+      },
+      {
+        src: "/images/summer-camp/week-1/workshop-4.jpg",
+        alt: "Students reviewing materials during camp",
+      },
+    ],
+    photoLabel: "Week 1 — Carbon Footprint",
+    photoGradient: "from-ecorise-400 to-ecorise-700",
+  },
+  {
+    id: "week-2",
+    week: 2,
+    shortLabel: "Carbon Cycle & Climate Change",
+    title: "Carbon Cycle & Climate Change",
+    date: "June 20, 2026",
+    location: "95th Street Library, Naperville",
+    summary:
+      "In Session 2, students explored the carbon cycle and learned how it connects to climate change in our atmosphere, oceans, and ecosystems. After building models and discussing greenhouse gases with camp instructors, students investigated local climate impacts and brainstormed community solutions.",
+    speakerLabel: "Guest Speaker",
+    featuredSpeaker: {
+      name: "Catherine Clarkin",
+      title: "Executive Director of Accelerate Climate Solutions",
+      talkTitle: "",
+      talkDescription: "",
+      quote: "It's more important than ever to build knowledge and skills to tackle climate change and biodiversity loss.",
+      photo: "/images/summer-camp/week-2/catherine-clarkin-headshot.png",
+    },
+    heroImage: "/images/summer-camp/week-2/hero-microphone.jpg",
+    galleryImages: [
+      {
+        src: "/images/summer-camp/week-2/workshop-1.jpg",
+        alt: "Students holding Compost Is Cool posters",
+      },
+      {
+        src: "/images/summer-camp/week-2/week-2-save-the-planet.jpg",
+        alt: "Student holding a Save the Planet poster at camp",
+      },
+      {
+        src: "/images/summer-camp/week-2/workshop-3.jpg",
+        alt: "Student presenting a Follow the 3 Rs poster",
+      },
+      {
+        src: "/images/summer-camp/week-2/workshop-4.jpg",
+        alt: "Camp mentor with a student and Save Turtles artwork",
+      },
+    ],
+    photoLabel: "Week 2 — Climate Change",
+    photoGradient: "from-[#c1eb84] to-ecorise-600",
+  },
+  {
+    id: "week-3",
+    week: 3,
+    shortLabel: "Reduce, Reuse & Recycle",
+    title: "Reduce, Reuse & Recycle",
+    date: "June 27, 2026",
+    location: "95th Street Library, Naperville",
+    summary:
+      "In Session 3, students learned the reduce, reuse, and recycle hierarchy through hands-on sorting activities and creative upcycling projects. After decorating reusable tote bags and designing zero-waste solutions with camp instructors, students planned ways to share what they learned back at school.",
+    speakerLabel: "Guest Speaker",
+    featuredSpeaker: {
+      name: "Elizabeth McDermott",
+      title: "Sustainability and Conservation Professional, The Morton Arboretum",
+      talkTitle: "",
+      talkDescription: "",
+      quote:
+        "Trees do a lot for us because they protect the environment and make our communities safer places to live.",
+      photo: "/images/summer-camp/week-3/elizabeth-mcdermott-headshot.png",
+    },
+    heroImage: "/images/summer-camp/week-3/hero-podium.jpg",
+    galleryImages: [
+      {
+        src: "/images/summer-camp/week-3/week-3-hand-raised-podium.jpg",
+        alt: "Student raising their hand during a guest speaker session at Session 3",
+      },
+      {
+        src: "/images/summer-camp/week-3/gallery-group.jpg",
+        alt: "EcoRise summer camp students gathered during Session 3",
+      },
+      {
+        src: "/images/summer-camp/week-3/workshop-3.jpg",
+        alt: "Student decorating a tote bag with Posca markers",
+      },
+      {
+        src: "/images/summer-camp/week-3/workshop-4.jpg",
+        alt: "Close-up of a student drawing on a reusable tote bag",
+      },
+    ],
+    photoLabel: "Week 3 — Reduce, Reuse, Recycle",
+    photoGradient: "from-ecorise-300 to-ecorise-800",
+  },
+  {
+    id: "week-4",
+    week: 4,
+    shortLabel: "Renewable Energy",
+    title: "Renewable Energy",
+    date: "July 10, 2026",
+    location: "95th Street Library, Naperville",
+    summary:
+      "In Session 4, students explored solar, wind, and hydro power and learned how renewable energy sources generate electricity without burning fossil fuels. After building simple energy models and investigating clean power in our communities with camp instructors, students brainstormed ways to support renewable energy at home and in Naperville.",
+    speakerLabel: "Guest Speaker",
+    featuredSpeaker: {
+      name: "Daniel Randolph",
+      title: "Director of Public Works, City of Naperville",
+      talkTitle: "",
+      talkDescription: "",
+      quote: "Powering Tomorrow with Clean Energy",
+      photo: "/images/summer-camp/week-4/daniel-randolph.jpg",
+    },
+    guestSpeaker: {
+      name: "Brook McDonald",
+      title: "President and CEO of The Conservation Foundation",
+      talkTitle: "",
+      talkDescription: "",
+      photo: "/images/summer-camp/week-4/brook-mcdonald.jpg",
+    },
+    photoLabel: "Week 4 — Renewable Energy",
+    photoGradient: "from-ecorise-500 to-ecorise-900",
+  },
+  {
+    id: "week-5",
+    week: 5,
+    shortLabel: "Circular Economy",
+    title: "Circular Economy",
+    date: "July 18, 2026",
+    location: "95th Street Library, Naperville",
+    summary:
+      "In Session 5, students learned how a circular economy keeps materials in use through repair, reuse, and thoughtful design rather than single-use waste. After applying circular thinking to hands-on projects with camp instructors, students refined their Green Dream Showcase presentations and prepared to share their sustainability ideas with the community.",
+    speakerLabel: "Guest Speaker",
+    featuredSpeaker: {
+      name: "Walter Willis",
+      title: "Executive Director of the Solid Waste Agency of Lake County (SWALCO)",
+      talkTitle: "",
+      talkDescription: "",
+      photo: "/images/summer-camp/week-5/walter-willis.jpg",
+    },
+    guestSpeaker: {
+      name: "Briana Moore",
+      title: "Recycling Program Specialist, Will County Land Use Department",
+      talkTitle: "",
+      talkDescription: "",
+      photo: "/images/summer-camp/week-5/briana-moore.jpg",
+    },
+    photoLabel: "Week 5 — Circular Economy",
+    photoGradient: "from-[#c1eb84] to-ecorise-500",
+  },
+];

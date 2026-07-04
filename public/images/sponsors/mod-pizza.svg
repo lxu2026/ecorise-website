@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="MOD Pizza">
+  <path d="M60 8 L108 28 L108 92 L60 112 L12 92 L12 28 Z" fill="#c8102e"/>
+  <path d="M60 8 L60 112 L12 92 L12 28 Z" fill="#8b0000"/>
+  <text x="60" y="72" text-anchor="middle" fill="#fff" font-family="Arial Black, sans-serif" font-size="32" font-weight="900">MOD</text>
+</svg>
