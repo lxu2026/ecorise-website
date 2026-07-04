@@ -14,7 +14,7 @@ export const coreTeam: TeamMember[] = [
     name: "Evan Xu",
     role: "Co-Founder & President",
     bio: "Evan founded EcoRise from a passion for environmental education and community building, guiding its vision and partnerships to connect schools, sponsors, and volunteers.",
-    photo: "/images/team/evan-xu.jpg",
+    photo: "/images/team/evan-xu-v2.jpg",
   },
   {
     name: "Andrew Wu",
