@@ -80,10 +80,10 @@ export function Team() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <AnimateOnScroll className="mx-auto mb-16 flex max-w-3xl flex-col items-center text-center">
           <h2 className="text-4xl font-bold text-[#1b4332] sm:text-5xl">Our Team</h2>
-          <p className="mt-5 text-base leading-relaxed text-slate-600 sm:text-lg">
-            EcoRise is powered by a dedicated team of student leaders,
-            educators, and community partners committed to fostering the next
-            generation of environmental innovators.
+          <p className="text-pretty mt-5 text-base leading-relaxed text-slate-600 sm:text-lg">
+            EcoRise is powered by passionate student leaders, dedicated mentors,
+            and community partners working together to inspire the next generation
+            of environmental changemakers.
           </p>
         </AnimateOnScroll>
 

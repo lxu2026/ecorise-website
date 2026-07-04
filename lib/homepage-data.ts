@@ -127,13 +127,13 @@ export const impactAtAGlanceContent = {
       value: 131,
       label: "Students Taught",
       description:
-        "Young leaders learning through camps, workshops, and hands-on sustainability programs across our community.",
+        "Young leaders inspired through camps, workshops, and hands-on sustainability experiences.",
     },
     {
       value: 31,
-      label: "Schools Engaged",
+      label: "Schools Represented",
       description:
-        "K–12 campuses partnering with EcoRise to bring hands-on sustainability education to their students.",
+        "Students from 31 schools participated in EcoRise programs across the community.",
     },
     {
       value: 3000,
@@ -141,13 +141,13 @@ export const impactAtAGlanceContent = {
       suffix: "+",
       label: "Funding Raised",
       description:
-        "Grants, sponsorships, and community support fueling free programs and student-led environmental projects.",
+        "Community support, grants, and sponsorships helping provide free environmental education programs.",
     },
     {
       value: 38,
-      label: "Student Staff",
+      label: "Student Leaders",
       description:
-        "Peer mentors and camp leaders guiding younger students while building their own leadership skills.",
+        "High school mentors and camp leaders empowering younger students while developing leadership skills.",
     },
   ] satisfies ImpactGlanceCard[],
 } as const;
@@ -198,7 +198,7 @@ export const sponsorsPage = {
   heroEyebrow: "Powered by our community",
   heroTitleLead: "The people behind",
   heroDescription:
-    "EcoRise exists because businesses and individuals choose to invest in young environmental leaders. Every contribution goes directly toward camps, competitions, and programs for students.",
+    "EcoRise is powered by the generosity of businesses, families, and community partners who believe in the next generation. Every donation helps provide hands-on sustainability education, leadership opportunities, and environmental programs for students.",
   ctaLabel: "See perks of becoming a sponsor",
   ctaHref: "#sponsorship-tiers",
 } as const;
@@ -212,7 +212,7 @@ export const currentSponsors: CurrentSponsor[] = [
     url: "https://www.att.com",
     year: 2026,
     description:
-      "A generous contribution supporting EcoRise camps and student sustainability programs across the community.",
+      "Supporting venue rental to provide students with a welcoming space for the EcoRise Summer Camp and Green Dream Challenge.",
   },
   {
     name: "Oxy",
@@ -222,7 +222,7 @@ export const currentSponsors: CurrentSponsor[] = [
     url: "https://www.oxy.com",
     year: 2026,
     description:
-      "Investing in the next generation of environmental leaders through hands-on EcoRise programming.",
+      "Supporting Green Dream Challenge awards that recognize outstanding student sustainability projects and innovation.",
   },
   {
     name: "Rockwell Automation",
@@ -232,7 +232,7 @@ export const currentSponsors: CurrentSponsor[] = [
     url: "https://www.rockwellautomation.com",
     year: 2026,
     description:
-      "Supporting EcoRise workshops that connect STEM learning with real-world sustainability challenges.",
+      "Supporting Summer Camp supplies, hands-on activities, and educational materials for EcoRise students.",
   },
   {
     name: "Costco",
@@ -243,7 +243,7 @@ export const currentSponsors: CurrentSponsor[] = [
     logoWide: true,
     year: 2026,
     description:
-      "Helping EcoRise deliver accessible environmental education to students throughout the region.",
+      "Supporting Summer Camp printing, educational materials, and student activity supplies.",
   },
 ];
 

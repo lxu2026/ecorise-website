@@ -1,8 +1,8 @@
 const missionProblemText =
-  "Too many students are passionate about protecting the planet but never get the chance to turn that enthusiasm into real skills. Environmental literacy is often treated as an elective—something squeezed into a unit or a poster on a wall—while the urgency of climate change and local sustainability challenges grows every year. Young people deserve more than awareness; they deserve hands-on experience that builds confidence and leadership.";
+  "Too many students care about protecting the planet but never get the chance to turn that passion into real action. Environmental education is often limited to lectures and worksheets, while today's sustainability challenges demand creativity, collaboration, and hands-on problem solving. Young people deserve more than awareness—they deserve opportunities to build skills, confidence, and leadership.";
 
 const missionActionText =
-  "EcoRise is a student-run 501(c)(3) nonprofit based in Naperville, Illinois, dedicated to making sustainability education accessible, engaging, and youth-led. Through our Summer Camp, Green Dream Challenge, workshops, and office hours, we give K–12 students the tools to learn hands-on, develop environmental projects, and share their ideas with the community. Every program is designed by students who believe the next generation of environmental leaders is already here—we're just giving them the platform to rise.";
+  "EcoRise is a student-led 501(c)(3) nonprofit based in Naperville, Illinois, dedicated to making sustainability education accessible, engaging, and action-oriented. Through our Summer Camp, Green Dream Challenge, workshops, and service projects, we empower K–12 students to learn by doing, develop innovative environmental solutions, and create lasting impact in their communities. We believe the next generation of environmental leaders is already here—they just need the opportunity to rise.";
 
 export function AboutMissionSection() {
   return (
@@ -47,7 +47,7 @@ export function AboutMissionSection() {
               className="pointer-events-none absolute -right-6 top-1/2 h-20 w-20 -translate-y-1/2 rounded-full bg-[#f2c029]/25 blur-sm sm:h-24 sm:w-24"
             />
             <p className="relative text-center text-base font-medium text-[#1b4332] sm:text-lg">
-              In April 2026, we set out to fix that.
+              In April 2026, we decided to change that.
             </p>
           </div>
 
