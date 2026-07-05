@@ -30,7 +30,12 @@ export const sitePhotoUsage = {
   aboutHero: "/images/about/thanks-for-coming-hero.jpg",
   aboutMission: "/images/mission-tote-bag.png",
   officeHoursHero: "/images/office-hours/tote-decorating-hero.jpg",
-  summerCampHeroCollage: "/images/summer-camp/hero-collage-2.png",
+  summerCampHeroCollage: [
+    "/images/summer-camp/hero/group-at-table.jpg",
+    "/images/summer-camp/hero/table-session.jpg",
+    "/images/summer-camp/hero/students-celebration.jpg",
+    "/images/summer-camp/hero/workshop-activity.jpg",
+  ],
   summerCampWeeks: {
     week1: {
       hero: "/images/summer-camp/week-1/hero-instructor.jpg",

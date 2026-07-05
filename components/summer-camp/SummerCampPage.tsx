@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/Button";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
+import { SummerCampHeroCollage } from "@/components/summer-camp/SummerCampHeroCollage";
 import { campHero, campIntro, campWeeks, type CampWeek } from "@/lib/summer-camp-data";
 import Image from "next/image";
 
@@ -260,7 +261,7 @@ export function SummerCampPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-[#1b4332] via-[#2d5a3d] to-[#4a7c44] pb-16 pt-28 text-white lg:pb-20 lg:pt-36">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(193,235,132,0.18),transparent_55%)]" />
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,42rem)_1fr] lg:gap-14 xl:gap-16">
+          <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,42rem)_1fr] lg:gap-14 xl:gap-16">
             <div className="max-w-2xl">
               <span className="inline-flex items-center gap-2 rounded-full border border-[#c1eb84]/35 bg-white/5 px-4 py-2 text-sm font-semibold tracking-wide text-[#c1eb84]">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#c1eb84]" aria-hidden="true" />
@@ -305,23 +306,10 @@ export function SummerCampPage() {
               </div>
             </div>
 
-            <div className="flex items-center justify-center lg:ml-8 xl:ml-12">
-              {campHero.heroCollages.map((src, index) => (
-                <div
-                  key={src}
-                  className="overflow-hidden rounded-xl shadow-2xl ring-1 ring-white/10 sm:rounded-2xl"
-                >
-                  <Image
-                    src={src}
-                    alt={`EcoRise Summer Camp photo collage ${index + 1}`}
-                    width={640}
-                    height={853}
-                    className="h-auto max-h-[24rem] w-full object-contain sm:max-h-[29rem] lg:max-h-[34rem]"
-                    priority={index === 0}
-                    sizes="(max-width: 1024px) 90vw, 40vw"
-                  />
-                </div>
-              ))}
+            <div className="flex justify-center lg:justify-end lg:pl-4">
+              <div className="w-full max-w-md lg:max-w-[32rem] xl:max-w-[36rem]">
+                <SummerCampHeroCollage />
+              </div>
             </div>
           </div>
         </div>

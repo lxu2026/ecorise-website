@@ -31,7 +31,7 @@ export const gdcHeroPhotos = [
   {
     src: sitePhotoUsage.greenDreamChallengeHero[2],
     alt: "Students collaborating during a sustainability workshop",
-    className: "bottom-0 left-[14%] z-10 h-[44%] w-[58%]",
+    className: "bottom-[5%] left-[14%] z-10 h-[44%] w-[58%]",
     objectPosition: "center 35%",
     rotate: -1.5,
   },

@@ -8,6 +8,8 @@ export type CampSpeaker = {
   photo?: string;
 };
 
+import { sitePhotoUsage } from "@/lib/site-photos";
+
 export type CampWeek = {
   id: string;
   week: number;
@@ -33,13 +35,43 @@ export const campHero = {
     "Our five-part sustainability journey takes students from environmental discovery to community-ready projects through hands-on workshops, field activities, and expert mentorship.",
   registerUrl:
     "https://docs.google.com/forms/d/1Qyo-zPQjg0JwHgR-iv1rh7OnY3IB1g0cJ0oHkbT0tWY/viewform",
-  heroCollages: ["/images/summer-camp/hero-collage-2.png"],
   stats: [
     { value: "5", label: "Camp Weeks" },
     { value: "7", label: "Guest Speakers" },
     { value: "100+", label: "Students Taught" },
   ],
 };
+
+export const campHeroPhotos = [
+  {
+    src: sitePhotoUsage.summerCampHeroCollage[0],
+    alt: "EcoRise summer camp students and mentors gathered around a workshop table",
+    className: "left-0 top-0 z-30 h-[48%] w-[62%]",
+    objectPosition: "center 40%",
+    rotate: -3.5,
+  },
+  {
+    src: sitePhotoUsage.summerCampHeroCollage[1],
+    alt: "Students collaborating on a sustainability activity during EcoRise camp",
+    className: "right-0 top-0 z-20 h-[36%] w-[48%]",
+    objectPosition: "center 35%",
+    rotate: 4,
+  },
+  {
+    src: sitePhotoUsage.summerCampHeroCollage[2],
+    alt: "EcoRise camp students celebrating together with handmade projects",
+    className: "bottom-[6%] left-0 z-10 h-[42%] w-[54%]",
+    objectPosition: "center 35%",
+    rotate: -2,
+  },
+  {
+    src: sitePhotoUsage.summerCampHeroCollage[3],
+    alt: "Students working on creative sustainability projects at EcoRise camp",
+    className: "bottom-[8%] right-0 z-30 h-[40%] w-[56%]",
+    objectPosition: "center 35%",
+    rotate: 2.5,
+  },
+] as const;
 
 export const campIntro = {
   title: "2026 Sustainability Camp",
