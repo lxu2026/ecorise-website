@@ -9,6 +9,7 @@ export type CampSpeaker = {
 };
 
 import { sitePhotoUsage } from "@/lib/site-photos";
+import { threePhotoHeroCollageFrames } from "@/lib/hero-collage-layout";
 
 export type CampWeek = {
   id: string;
@@ -46,30 +47,17 @@ export const campHeroPhotos = [
   {
     src: sitePhotoUsage.summerCampHeroCollage[0],
     alt: "EcoRise summer camp students and mentors gathered around a workshop table",
-    className: "left-0 top-0 z-30 h-[48%] w-[62%]",
-    objectPosition: "center 40%",
-    rotate: -3.5,
+    ...threePhotoHeroCollageFrames[0],
   },
   {
     src: sitePhotoUsage.summerCampHeroCollage[1],
     alt: "Students collaborating on a sustainability activity during EcoRise camp",
-    className: "right-0 top-0 z-20 h-[36%] w-[48%]",
-    objectPosition: "center 35%",
-    rotate: 4,
+    ...threePhotoHeroCollageFrames[1],
   },
   {
     src: sitePhotoUsage.summerCampHeroCollage[2],
-    alt: "EcoRise camp students celebrating together with handmade projects",
-    className: "bottom-[6%] left-0 z-10 h-[42%] w-[54%]",
-    objectPosition: "center 35%",
-    rotate: -2,
-  },
-  {
-    src: sitePhotoUsage.summerCampHeroCollage[3],
     alt: "Students working on creative sustainability projects at EcoRise camp",
-    className: "bottom-[8%] right-0 z-30 h-[40%] w-[56%]",
-    objectPosition: "center 35%",
-    rotate: 2.5,
+    ...threePhotoHeroCollageFrames[2],
   },
 ] as const;
 

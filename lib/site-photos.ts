@@ -33,7 +33,6 @@ export const sitePhotoUsage = {
   summerCampHeroCollage: [
     "/images/summer-camp/hero/group-at-table.jpg",
     "/images/summer-camp/hero/table-session.jpg",
-    "/images/summer-camp/hero/students-celebration.jpg",
     "/images/summer-camp/hero/workshop-activity.jpg",
   ],
   summerCampWeeks: {

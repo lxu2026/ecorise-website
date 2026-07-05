@@ -1,4 +1,5 @@
 import { sitePhotoUsage } from "@/lib/site-photos";
+import { threePhotoHeroCollageFrames } from "@/lib/hero-collage-layout";
 
 export const gdcHero = {
   eyebrow: "Student Competition",
@@ -17,23 +18,17 @@ export const gdcHeroPhotos = [
   {
     src: sitePhotoUsage.greenDreamChallengeHero[0],
     alt: "EcoRise students collaborating at a table during a Green Dream Challenge workshop",
-    className: "left-0 top-0 z-30 h-[48%] w-[62%]",
-    objectPosition: "center 40%",
-    rotate: -3.5,
+    ...threePhotoHeroCollageFrames[0],
   },
   {
     src: sitePhotoUsage.greenDreamChallengeHero[1],
     alt: "Student presenting a sustainability project on paper during Green Dream Challenge",
-    className: "right-0 top-[2%] z-20 h-[36%] w-[48%]",
-    objectPosition: "center 35%",
-    rotate: 4,
+    ...threePhotoHeroCollageFrames[1],
   },
   {
     src: sitePhotoUsage.greenDreamChallengeHero[2],
     alt: "Students collaborating during a sustainability workshop",
-    className: "bottom-[5%] left-[14%] z-10 h-[44%] w-[58%]",
-    objectPosition: "center 35%",
-    rotate: -1.5,
+    ...threePhotoHeroCollageFrames[2],
   },
 ] as const;
 

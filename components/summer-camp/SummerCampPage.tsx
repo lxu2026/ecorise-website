@@ -2,6 +2,11 @@
 
 import { Button } from "@/components/ui/Button";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
+import {
+  heroCollageGridClassName,
+  heroCollageInnerClassName,
+  heroCollageWrapperClassName,
+} from "@/lib/hero-collage-layout";
 import { SummerCampHeroCollage } from "@/components/summer-camp/SummerCampHeroCollage";
 import { campHero, campIntro, campWeeks, type CampWeek } from "@/lib/summer-camp-data";
 import Image from "next/image";
@@ -261,53 +266,53 @@ export function SummerCampPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-[#1b4332] via-[#2d5a3d] to-[#4a7c44] pb-16 pt-28 text-white lg:pb-20 lg:pt-36">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(193,235,132,0.18),transparent_55%)]" />
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,42rem)_1fr] lg:gap-14 xl:gap-16">
-            <div className="max-w-2xl">
-              <span className="inline-flex items-center gap-2 rounded-full border border-[#c1eb84]/35 bg-white/5 px-4 py-2 text-sm font-semibold tracking-wide text-[#c1eb84]">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#c1eb84]" aria-hidden="true" />
-                {campHero.eyebrow}
-              </span>
+          <div className={heroCollageGridClassName}>
+            <div className="max-w-xl">
+            <span className="inline-flex items-center gap-2 rounded-full border border-[#c1eb84]/35 bg-white/5 px-4 py-2 text-sm font-semibold tracking-wide text-[#c1eb84]">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#c1eb84]" aria-hidden="true" />
+              {campHero.eyebrow}
+            </span>
 
-              <h1 className="mt-6 font-display text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl lg:leading-[1.05] xl:text-[5.25rem]">
-                <span className="text-white">{campHero.titleMain}</span>{" "}
-                <span className="text-[#c1eb84]">{campHero.titleAccent}</span>
-              </h1>
+            <h1 className="mt-6 font-display text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl lg:leading-[1.05] xl:text-[5.25rem]">
+              <span className="text-white">{campHero.titleMain}</span>{" "}
+              <span className="text-[#c1eb84]">{campHero.titleAccent}</span>
+            </h1>
 
-              <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/90 sm:text-xl lg:mt-10 lg:max-w-lg lg:text-[1.35rem] lg:leading-[1.65]">
-                {campHero.description}
-              </p>
+            <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/90 sm:text-xl lg:mt-10 lg:max-w-lg lg:text-[1.35rem] lg:leading-[1.65]">
+              {campHero.description}
+            </p>
 
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap lg:mt-12">
-                <Button
-                  href="#camp-sessions"
-                  variant="accent"
-                  size="lg"
-                  className="px-8 py-4 text-base sm:text-lg"
-                >
-                  Explore Camp →
-                </Button>
-                <Button
-                  href={campHero.registerUrl}
-                  variant="inverseOutline"
-                  size="lg"
-                  className="px-8 py-4 text-base sm:text-lg"
-                >
-                  Register Now →
-                </Button>
-              </div>
-
-              <div className="mt-14 grid max-w-xl grid-cols-3 gap-4 border-t border-white/15 pt-10 sm:gap-6 lg:mt-16">
-                {campHero.stats.map((stat) => (
-                  <div key={stat.label}>
-                    <p className="text-3xl font-bold sm:text-4xl lg:text-5xl">{stat.value}</p>
-                    <p className="mt-1.5 text-sm text-white/75 sm:text-base">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap lg:mt-12">
+              <Button
+                href="#camp-sessions"
+                variant="accent"
+                size="lg"
+                className="px-8 py-4 text-base sm:text-lg"
+              >
+                Explore Camp →
+              </Button>
+              <Button
+                href={campHero.registerUrl}
+                variant="inverseOutline"
+                size="lg"
+                className="px-8 py-4 text-base sm:text-lg"
+              >
+                Register Now →
+              </Button>
             </div>
 
-            <div className="flex justify-center lg:justify-end lg:pl-4">
-              <div className="w-full max-w-md lg:max-w-[32rem] xl:max-w-[36rem]">
+            <div className="mt-14 grid max-w-xl grid-cols-3 gap-4 border-t border-white/15 pt-10 sm:gap-6 lg:mt-16">
+              {campHero.stats.map((stat) => (
+                <div key={stat.label}>
+                  <p className="text-3xl font-bold sm:text-4xl lg:text-5xl">{stat.value}</p>
+                  <p className="mt-1.5 text-sm text-white/75 sm:text-base">{stat.label}</p>
+                </div>
+              ))}
+            </div>
+            </div>
+
+            <div className={heroCollageWrapperClassName}>
+              <div className={heroCollageInnerClassName}>
                 <SummerCampHeroCollage />
               </div>
             </div>
