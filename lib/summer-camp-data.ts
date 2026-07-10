@@ -20,8 +20,9 @@ export type CampWeek = {
   location: string;
   summary: string;
   speakerLabel?: string;
-  featuredSpeaker: CampSpeaker;
-  guestSpeaker?: CampSpeaker;
+  guestSpeakers: CampSpeaker[];
+  /** When "below", speakers render under the gallery (e.g. Week 5). Default: right sidebar. */
+  speakerPlacement?: "sidebar" | "below";
   heroImage?: string;
   galleryImages?: { src: string; alt: string }[];
   photoLabel: string;
@@ -38,7 +39,7 @@ export const campHero = {
     "https://docs.google.com/forms/d/1Qyo-zPQjg0JwHgR-iv1rh7OnY3IB1g0cJ0oHkbT0tWY/viewform",
   stats: [
     { value: "5", label: "Camp Weeks" },
-    { value: "7", label: "Guest Speakers" },
+    { value: "8", label: "Guest Speakers" },
     { value: "100+", label: "Students Taught" },
   ],
 };
@@ -78,15 +79,17 @@ export const campWeeks: CampWeek[] = [
     summary:
       "In Session 1, students kicked off EcoRise Summer Camp by learning what sustainability means and how everyday choices shape our carbon footprint. After exploring emissions, energy use, and personal impact with camp instructors, students built simple action plans to live more sustainably at home and school.",
     speakerLabel: "Guest Speaker",
-    featuredSpeaker: {
-      name: "Ben Mjolsness",
-      title: "Sustainability Manager, City of Naperville",
-      talkTitle: "",
-      talkDescription: "",
-      quote:
-        "It's exciting to see the youth change the world for the better.",
-      photo: "/images/summer-camp/week-1/ben-mjolsness.jpg",
-    },
+    guestSpeakers: [
+      {
+        name: "Ben Mjolsness",
+        title: "Sustainability Manager, City of Naperville",
+        talkTitle: "",
+        talkDescription: "",
+        quote:
+          "It's exciting to see the youth change the world for the better.",
+        photo: "/images/summer-camp/week-1/ben-mjolsness.jpg",
+      },
+    ],
     heroImage: "/images/summer-camp/week-1/hero-instructor.jpg",
     galleryImages: [
       {
@@ -119,14 +122,16 @@ export const campWeeks: CampWeek[] = [
     summary:
       "In Session 2, students explored the carbon cycle and learned how it connects to climate change in our atmosphere, oceans, and ecosystems. After building models and discussing greenhouse gases with camp instructors, students investigated local climate impacts and brainstormed community solutions.",
     speakerLabel: "Guest Speaker",
-    featuredSpeaker: {
-      name: "Catherine Clarkin",
-      title: "Executive Director of Accelerate Climate Solutions",
-      talkTitle: "",
-      talkDescription: "",
-      quote: "It's more important than ever to build knowledge and skills to tackle climate change and biodiversity loss.",
-      photo: "/images/summer-camp/week-2/catherine-clarkin-headshot.png",
-    },
+    guestSpeakers: [
+      {
+        name: "Catherine Clarkin",
+        title: "Executive Director of Accelerate Climate Solutions",
+        talkTitle: "",
+        talkDescription: "",
+        quote: "It's more important than ever to build knowledge and skills to tackle climate change and biodiversity loss.",
+        photo: "/images/summer-camp/week-2/catherine-clarkin-headshot.png",
+      },
+    ],
     heroImage: "/images/summer-camp/week-2/hero-microphone.jpg",
     galleryImages: [
       {
@@ -159,15 +164,17 @@ export const campWeeks: CampWeek[] = [
     summary:
       "In Session 3, students learned the reduce, reuse, and recycle hierarchy through hands-on sorting activities and creative upcycling projects. After decorating reusable tote bags and designing zero-waste solutions with camp instructors, students planned ways to share what they learned back at school.",
     speakerLabel: "Guest Speaker",
-    featuredSpeaker: {
-      name: "Elizabeth McDermott",
-      title: "Sustainability and Conservation Professional, The Morton Arboretum",
-      talkTitle: "",
-      talkDescription: "",
-      quote:
-        "Trees do a lot for us because they protect the environment and make our communities safer places to live.",
-      photo: "/images/summer-camp/week-3/elizabeth-mcdermott-headshot.png",
-    },
+    guestSpeakers: [
+      {
+        name: "Elizabeth McDermott",
+        title: "Sustainability and Conservation Professional, The Morton Arboretum",
+        talkTitle: "",
+        talkDescription: "",
+        quote:
+          "Trees do a lot for us because they protect the environment and make our communities safer places to live.",
+        photo: "/images/summer-camp/week-3/elizabeth-mcdermott-headshot.png",
+      },
+    ],
     heroImage: "/images/summer-camp/week-3/hero-podium.jpg",
     galleryImages: [
       {
@@ -200,21 +207,23 @@ export const campWeeks: CampWeek[] = [
     summary:
       "In Session 4, students explored solar, wind, and hydro power and learned how renewable energy sources generate electricity without burning fossil fuels. After building simple energy models and investigating clean power in our communities with camp instructors, students brainstormed ways to support renewable energy at home and in Naperville.",
     speakerLabel: "Guest Speaker",
-    featuredSpeaker: {
-      name: "Daniel Randolph",
-      title: "Director of Public Works, City of Naperville",
-      talkTitle: "",
-      talkDescription: "",
-      quote: "Powering Tomorrow with Clean Energy",
-      photo: "/images/summer-camp/week-4/daniel-randolph.jpg",
-    },
-    guestSpeaker: {
-      name: "Brook McDonald",
-      title: "President and CEO of The Conservation Foundation",
-      talkTitle: "",
-      talkDescription: "",
-      photo: "/images/summer-camp/week-4/brook-mcdonald.jpg",
-    },
+    guestSpeakers: [
+      {
+        name: "Daniel Randolph",
+        title: "Director of Public Works, City of Naperville",
+        talkTitle: "",
+        talkDescription: "",
+        quote: "Powering Tomorrow with Clean Energy",
+        photo: "/images/summer-camp/week-4/daniel-randolph.jpg",
+      },
+      {
+        name: "Brook McDonald",
+        title: "President and CEO of The Conservation Foundation",
+        talkTitle: "",
+        talkDescription: "",
+        photo: "/images/summer-camp/week-4/brook-mcdonald.jpg",
+      },
+    ],
     photoLabel: "Week 4 — Renewable Energy",
     photoGradient: "from-ecorise-500 to-ecorise-900",
   },
@@ -228,20 +237,30 @@ export const campWeeks: CampWeek[] = [
     summary:
       "In Session 5, students learned how a circular economy keeps materials in use through repair, reuse, and thoughtful design rather than single-use waste. After applying circular thinking to hands-on projects with camp instructors, students refined their Green Dream Showcase presentations and prepared to share their sustainability ideas with the community.",
     speakerLabel: "Guest Speaker",
-    featuredSpeaker: {
-      name: "Walter Willis",
-      title: "Executive Director of the Solid Waste Agency of Lake County (SWALCO)",
-      talkTitle: "",
-      talkDescription: "",
-      photo: "/images/summer-camp/week-5/walter-willis.jpg",
-    },
-    guestSpeaker: {
-      name: "Briana Moore",
-      title: "Recycling Program Specialist, Will County Land Use Department",
-      talkTitle: "",
-      talkDescription: "",
-      photo: "/images/summer-camp/week-5/briana-moore.jpg",
-    },
+    speakerPlacement: "below",
+    guestSpeakers: [
+      {
+        name: "Walter Willis",
+        title: "Executive Director of the Solid Waste Agency of Lake County (SWALCO)",
+        talkTitle: "",
+        talkDescription: "",
+        photo: "/images/summer-camp/week-5/walter-willis.jpg",
+      },
+      {
+        name: "Laura Ellman",
+        title: "State Senator, IL 21st District",
+        talkTitle: "",
+        talkDescription: "",
+        photo: "/images/summer-camp/week-5/laura-ellman.jpg",
+      },
+      {
+        name: "Briana Moore",
+        title: "Recycling Program Specialist, Will County Land Use Department",
+        talkTitle: "",
+        talkDescription: "",
+        photo: "/images/summer-camp/week-5/briana-moore.jpg",
+      },
+    ],
     photoLabel: "Week 5 — Circular Economy",
     photoGradient: "from-[#c1eb84] to-ecorise-500",
   },

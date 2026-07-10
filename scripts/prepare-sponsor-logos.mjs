@@ -31,6 +31,42 @@ const jobs = [
     skipBackgroundRemoval: true,
     normalizeCanvas: WIDE_LOGO_CANVAS,
   },
+  {
+    input: path.join(
+      assetsDir,
+      "c__Users_User_AppData_Roaming_Cursor_User_workspaceStorage_f5ec9a3fcc7ebeaf4b38d6ddf744336b_images_image-1e1a7ae9-e2df-46ec-a261-3b7f1d4681a9.png",
+    ),
+    output: path.resolve(root, "public/images/sponsors/insomnia-cookies.png"),
+    skipBackgroundRemoval: true,
+    normalizeCanvas: WIDE_LOGO_CANVAS,
+  },
+  {
+    input: path.join(
+      assetsDir,
+      "c__Users_User_AppData_Roaming_Cursor_User_workspaceStorage_f5ec9a3fcc7ebeaf4b38d6ddf744336b_images_image-527fba26-e5aa-4d4e-9c1e-c9a67fbe1d97.png",
+    ),
+    output: path.resolve(root, "public/images/sponsors/lush.png"),
+    isBackground: (r, g, b) => r > 240 && g > 240 && b > 240,
+    normalizeCanvas: WIDE_LOGO_CANVAS,
+  },
+  {
+    input: path.join(
+      assetsDir,
+      "c__Users_User_AppData_Roaming_Cursor_User_workspaceStorage_f5ec9a3fcc7ebeaf4b38d6ddf744336b_images_image-cd15c531-0b31-4eef-8561-8b6bd53ce918.png",
+    ),
+    output: path.resolve(root, "public/images/sponsors/red-mango.png"),
+    isBackground: (r, g, b) => r < 35 && g < 35 && b < 35,
+    normalizeCanvas: WIDE_LOGO_CANVAS,
+  },
+  {
+    input: path.join(
+      assetsDir,
+      "c__Users_User_AppData_Roaming_Cursor_User_workspaceStorage_f5ec9a3fcc7ebeaf4b38d6ddf744336b_images_image-cd1e5ad4-8591-4ec7-8b87-423b535fb8dd.png",
+    ),
+    output: path.resolve(root, "public/images/sponsors/egg-harbor-cafe.png"),
+    skipBackgroundRemoval: true,
+    normalizeCanvas: WIDE_LOGO_CANVAS,
+  },
 ];
 
 function removeEdgeBackground(data, width, height, isBackground) {

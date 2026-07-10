@@ -8,7 +8,7 @@ import {
   heroCollageWrapperClassName,
 } from "@/lib/hero-collage-layout";
 import { SummerCampHeroCollage } from "@/components/summer-camp/SummerCampHeroCollage";
-import { campHero, campIntro, campWeeks, type CampWeek } from "@/lib/summer-camp-data";
+import { campHero, campIntro, campWeeks, type CampSpeaker, type CampWeek } from "@/lib/summer-camp-data";
 import Image from "next/image";
 
 function CalendarIcon() {
@@ -34,7 +34,7 @@ function SpeakerSidebar({
   compact = false,
 }: {
   label: string;
-  speaker: CampWeek["featuredSpeaker"];
+  speaker: CampSpeaker;
   compact?: boolean;
 }) {
   if (compact) {
@@ -210,6 +210,50 @@ function WeekGallery({ week }: { week: CampWeek }) {
   );
 }
 
+function SpeakersRow({ week }: { week: CampWeek }) {
+  const label = week.speakerLabel ?? "Guest Speaker";
+  const count = week.guestSpeakers.length;
+  const gridClass =
+    count === 1
+      ? "max-w-sm"
+      : count === 2
+        ? "sm:grid-cols-2"
+        : "sm:grid-cols-2 lg:grid-cols-3";
+
+  return (
+    <div className={`mt-10 grid grid-cols-1 gap-4 ${gridClass}`}>
+      {week.guestSpeakers.map((speaker) => (
+        <SpeakerSidebar
+          key={speaker.name}
+          label={label}
+          speaker={speaker}
+          compact={count > 1}
+        />
+      ))}
+    </div>
+  );
+}
+
+function SpeakerSidebarColumn({ week }: { week: CampWeek }) {
+  const label = week.speakerLabel ?? "Guest Speaker";
+  const [primary, ...additional] = week.guestSpeakers;
+
+  if (!primary) return null;
+
+  return (
+    <div className={additional.length > 0 ? "space-y-4 lg:sticky lg:top-28" : "lg:sticky lg:top-28"}>
+      <SpeakerSidebar
+        label={label}
+        speaker={primary}
+        compact={additional.length > 0}
+      />
+      {additional.map((speaker) => (
+        <SpeakerSidebar key={speaker.name} label={label} speaker={speaker} compact />
+      ))}
+    </div>
+  );
+}
+
 function CampWeekSection({ week }: { week: CampWeek }) {
   return (
     <article
@@ -235,27 +279,21 @@ function CampWeekSection({ week }: { week: CampWeek }) {
         </div>
       </div>
 
-      <div className="grid gap-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] lg:items-start lg:gap-10 xl:gap-12">
-        <div>
+      {week.speakerPlacement === "below" ? (
+        <>
           <p className="text-base leading-relaxed text-slate-600 sm:text-lg">{week.summary}</p>
           <WeekGallery week={week} />
+          <SpeakersRow week={week} />
+        </>
+      ) : (
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] lg:items-start lg:gap-10 xl:gap-12">
+          <div>
+            <p className="text-base leading-relaxed text-slate-600 sm:text-lg">{week.summary}</p>
+            <WeekGallery week={week} />
+          </div>
+          <SpeakerSidebarColumn week={week} />
         </div>
-
-        <div className={week.guestSpeaker ? "space-y-4 lg:sticky lg:top-28" : "lg:sticky lg:top-28"}>
-          <SpeakerSidebar
-            label={week.speakerLabel ?? (week.guestSpeaker ? "Featured Speaker" : "Guest Speaker")}
-            speaker={week.featuredSpeaker}
-            compact={Boolean(week.guestSpeaker)}
-          />
-          {week.guestSpeaker && (
-            <SpeakerSidebar
-              label="Guest Speaker"
-              speaker={week.guestSpeaker}
-              compact
-            />
-          )}
-        </div>
-      </div>
+      )}
     </article>
   );
 }

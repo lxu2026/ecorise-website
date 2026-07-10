@@ -294,6 +294,10 @@ export const inKindDonors = [
   { name: "Lou Malnati's Pizzeria", logo: "/images/sponsors/lou-malnatis.png", url: "https://www.loumalnatis.com" },
   { name: "Trader Joe's", logo: "/images/sponsors/trader-joes.png", url: "https://www.traderjoes.com", logoClassName: "max-w-[90px] sm:max-w-[100px]" },
   { name: "zzcamellia", logo: "/images/sponsors/zzcamellia.png", url: "https://zzcamellia.com/", logoClassName: "max-w-[90px] sm:max-w-[100px]" },
+  { name: "Insomnia Cookies", logo: "/images/sponsors/insomnia-cookies.png", url: "https://insomniacookies.com" },
+  { name: "LUSH", logo: "/images/sponsors/lush.png", url: "https://www.lush.com" },
+  { name: "Red Mango", logo: "/images/sponsors/red-mango.png", url: "https://www.redmangousa.com" },
+  { name: "Egg Harbor Cafe", logo: "/images/sponsors/egg-harbor-cafe.png", url: "https://www.eggharborcafe.com" },
 ] as const;
 
 /** @deprecated Use currentSponsors */
