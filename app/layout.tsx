@@ -20,7 +20,6 @@ export const metadata: Metadata = {
   title: "EcoRise | Empowering Environmental Leaders",
   description:
     "EcoRise inspires K–12 students through sustainability education, STEM innovation, and community action.",
-
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
