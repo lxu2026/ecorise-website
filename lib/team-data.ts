@@ -32,19 +32,19 @@ export const coreTeam: TeamMember[] = [
     name: "Josh McConkey",
     role: "",
     bio: "Josh manages logistics for EcoRise, helping organize events, supplies, and schedules to keep every program running smoothly.",
-    photo: "/images/team/josh-mcconkey-hoodie-v2.jpg",
+    photo: "/images/team/josh-mcconkey-v5.jpg",
   },
   {
     name: "Shriya Tiwari",
     role: "",
     bio: "Shriya leads Green Dream and Office Hours, helping students explore sustainability and develop hands-on environmental projects.",
-    photo: "/images/team/shriya-tiwari.jpg",
+    photo: "/images/team/shriya-tiwari-v3.jpg",
   },
   {
     name: "Taksh Chauhan",
     role: "",
     bio: "Taksh leads fundraising and partnerships, helping secure the support that makes EcoRise programs possible.",
-    photo: "/images/team/taksh-chauhan.jpg",
+    photo: "/images/team/taksh-chauhan-v4.jpg",
   },
 ];
 

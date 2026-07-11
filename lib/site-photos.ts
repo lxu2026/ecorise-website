@@ -66,6 +66,19 @@ export const sitePhotoUsage = {
       ],
       speaker: "/images/summer-camp/week-3/elizabeth-mcdermott-headshot.png",
     },
+    week4: {
+      hero: "/images/summer-camp/week-4/hero-guest-speaker.jpg",
+      gallery: [
+        "/images/summer-camp/week-4/workshop-1.jpg",
+        "/images/summer-camp/week-4/workshop-2.jpg",
+        "/images/summer-camp/week-4/workshop-3.jpg",
+        "/images/summer-camp/week-4/workshop-collaboration.jpg",
+      ],
+      speakers: [
+        "/images/summer-camp/week-4/daniel-randolph.jpg",
+        "/images/summer-camp/week-4/brook-mcdonald.jpg",
+      ],
+    },
   },
 } as const;
 

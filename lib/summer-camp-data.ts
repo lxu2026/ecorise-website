@@ -200,12 +200,12 @@ export const campWeeks: CampWeek[] = [
   {
     id: "week-4",
     week: 4,
-    shortLabel: "Renewable Energy",
-    title: "Renewable Energy",
+    shortLabel: "Green Dream Workshop",
+    title: "Green Dream Workshop",
     date: "July 10, 2026",
     location: "95th Street Library, Naperville",
     summary:
-      "In Session 4, students explored solar, wind, and hydro power and learned how renewable energy sources generate electricity without burning fossil fuels. After building simple energy models and investigating clean power in our communities with camp instructors, students brainstormed ways to support renewable energy at home and in Naperville.",
+      "In Session 4, students dived into the Green Dream competition by identifying real-world sustainability challenges right here in Naperville. Working in a hands-on workshop environment with camp instructors, students brainstormed impactful ideas and began developing practical solutions for their community-focused projects. By the end of the session, students gained the foundational skills needed to research, structure, and pitch their unique sustainability goals.",
     speakerLabel: "Guest Speaker",
     guestSpeakers: [
       {
@@ -224,7 +224,26 @@ export const campWeeks: CampWeek[] = [
         photo: "/images/summer-camp/week-4/brook-mcdonald.jpg",
       },
     ],
-    photoLabel: "Week 4 — Renewable Energy",
+    heroImage: "/images/summer-camp/week-4/hero-guest-speaker.jpg",
+    galleryImages: [
+      {
+        src: "/images/summer-camp/week-4/workshop-1.jpg",
+        alt: "Guest speaker presenting on renewable energy and community planning to EcoRise camp students",
+      },
+      {
+        src: "/images/summer-camp/week-4/workshop-2.jpg",
+        alt: "Students and instructors collaborating during a renewable energy workshop",
+      },
+      {
+        src: "/images/summer-camp/week-4/workshop-3.jpg",
+        alt: "EcoRise camp mentor working with students at a workshop table",
+      },
+      {
+        src: "/images/summer-camp/week-4/workshop-collaboration.jpg",
+        alt: "Students collaborating on a Developing a Solution project during EcoRise camp",
+      },
+    ],
+    photoLabel: "Week 4 — Green Dream Workshop",
     photoGradient: "from-ecorise-500 to-ecorise-900",
   },
   {
