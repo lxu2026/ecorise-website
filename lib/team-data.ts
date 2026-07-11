@@ -60,9 +60,24 @@ export const instructors: TeamMember[] = [
     bio: "Aanya inspires young learners through fun, hands-on environmental activities and projects.",
   },
   {
+    name: "Aashi Pandey",
+    role: "Instructor",
+    bio: "Aashi helps students explore environmental topics through creative, hands-on learning.",
+  },
+  {
     name: "Abhinav Prabhu",
     role: "Instructor",
     bio: "Abhinav enjoys teaching STEM and sustainability through creative, hands-on learning.",
+  },
+  {
+    name: "Adhirit Chowdhary",
+    role: "Instructor",
+    bio: "Adhirit encourages students to think critically about sustainability and take action in their communities.",
+  },
+  {
+    name: "Adhrit Krishnamoorthy",
+    role: "Instructor",
+    bio: "Adhrit inspires young learners through engaging environmental activities and teamwork.",
   },
   {
     name: "Achyut Choudhary",
@@ -95,6 +110,16 @@ export const instructors: TeamMember[] = [
     bio: "Avani helps students build sustainable habits through engaging, real-world lessons.",
   },
   {
+    name: "Bella Borjas",
+    role: "Instructor",
+    bio: "Bella helps students build confidence while learning about sustainability and the environment.",
+  },
+  {
+    name: "Derek Deng",
+    role: "Instructor",
+    bio: "Derek enjoys mentoring students and making environmental science fun and accessible.",
+  },
+  {
     name: "Dino Wang",
     role: "Instructor",
     bio: "Dino enjoys helping students explore environmental science through hands-on activities.",
@@ -115,6 +140,11 @@ export const instructors: TeamMember[] = [
     bio: "Hadi helps students explore ecology and conservation through fun, hands-on lessons.",
   },
   {
+    name: "Imani Lynn",
+    role: "Instructor",
+    bio: "Imani creates a welcoming environment where students explore sustainability with curiosity.",
+  },
+  {
     name: "Ishaan Inamdar",
     role: "Instructor",
     bio: "Ishaan inspires students to protect the environment through hands-on learning and action.",
@@ -125,14 +155,29 @@ export const instructors: TeamMember[] = [
     bio: "Krish encourages students to grow through teamwork, sustainability, and creative problem-solving.",
   },
   {
+    name: "Krizelle Escala",
+    role: "Instructor",
+    bio: "Krizelle helps students connect environmental concepts to real-world challenges.",
+  },
+  {
     name: "Mannat Chhina",
     role: "Instructor",
     bio: "Mannat helps students connect with nature and understand how everyday choices make a difference.",
   },
   {
+    name: "Nandhan Mugilan",
+    role: "Instructor",
+    bio: "Nandhan inspires students to develop sustainable habits through hands-on projects.",
+  },
+  {
     name: "Navya Sedani",
     role: "Instructor",
     bio: "Navya inspires students to learn about climate change and build sustainable habits.",
+  },
+  {
+    name: "Navaneeth Suresh",
+    role: "Instructor",
+    bio: "Navaneeth encourages students to explore ecology and conservation through interactive lessons.",
   },
   {
     name: "Perlita Chan",
@@ -158,6 +203,11 @@ export const instructors: TeamMember[] = [
     name: "Sahasra Racharla",
     role: "Instructor",
     bio: "Sahasra enjoys helping students learn about sustainability through hands-on activities.",
+  },
+  {
+    name: "Sam Coughlin",
+    role: "Instructor",
+    bio: "Sam helps students grow as environmental leaders through teamwork and creative problem-solving.",
   },
   {
     name: "Simi Dawani",
