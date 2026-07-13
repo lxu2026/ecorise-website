@@ -152,6 +152,30 @@ export const impactAtAGlanceContent = {
   ] satisfies ImpactGlanceCard[],
 } as const;
 
+export const inTheNewsContent = {
+  title: "In The News",
+  subtitle:
+    "Our mission has been featured by local media outlets, highlighting our commitment to advancing environmental literacy and empowering the next generation of sustainability leaders in Naperville and beyond.",
+  feature: {
+    title: "Daily Herald Feature",
+    description:
+      "During our summer camp program, EcoRise was featured by the Daily Herald. The article highlighted our mission to make environmental literacy accessible and our work bringing together over 100 local youth at the 95th Street Library to design hands-on sustainability projects for the community.",
+    ctaLabel: "Read the Article",
+    ctaHref:
+      "https://www.dailyherald.com/20260713/submitted-content/napervilles-ecorise-wraps-up-free-environmental-summer-camp-for-youth/",
+    images: {
+      primary: {
+        src: "/images/about/95th-street-library.jpg",
+        alt: "95th Street Library in Naperville, where EcoRise summer camp was held",
+      },
+      secondary: {
+        src: "/images/about/daily-herald-sign.jpg",
+        alt: "Daily Herald sign",
+      },
+    },
+  },
+} as const;
+
 export const events = [
   {
     title: "Spring Sustainability Fair",

@@ -28,6 +28,10 @@ export const sitePhotoUsage = {
     "/images/home/hero/workshop.jpg",
   ],
   aboutHero: "/images/about/thanks-for-coming-hero.jpg",
+  aboutInTheNews: [
+    "/images/about/95th-street-library.jpg",
+    "/images/about/daily-herald-sign.jpg",
+  ],
   aboutMission: "/images/mission-tote-bag.png",
   officeHoursHero: "/images/office-hours/tote-decorating-hero.jpg",
   summerCampHeroCollage: [

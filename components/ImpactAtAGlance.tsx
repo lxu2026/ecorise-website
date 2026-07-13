@@ -2,7 +2,13 @@
 
 import { AnimatedNumber } from "@/components/ui/AnimatedCounter";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
-import { impactAtAGlanceContent, type ImpactGlanceCard } from "@/lib/homepage-data";
+import { Button } from "@/components/ui/Button";
+import {
+  impactAtAGlanceContent,
+  inTheNewsContent,
+  type ImpactGlanceCard,
+} from "@/lib/homepage-data";
+import Image from "next/image";
 
 function ImpactCard({
   card,
@@ -58,6 +64,60 @@ export function ImpactAtAGlance() {
           {cards.map((card, index) => (
             <ImpactCard key={card.label} card={card} delay={index * 0.08} />
           ))}
+        </div>
+
+        <div className="mt-20 border-t border-slate-200 pt-16 lg:mt-24 lg:pt-20">
+          <AnimateOnScroll className="mx-auto max-w-3xl text-center">
+            <h3 className="font-display text-3xl font-bold text-[#1b4332] sm:text-4xl">
+              {inTheNewsContent.title}
+            </h3>
+            <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
+              {inTheNewsContent.subtitle}
+            </p>
+          </AnimateOnScroll>
+
+          <div className="mt-12 grid grid-cols-1 items-center gap-10 lg:mt-16 lg:grid-cols-2 lg:gap-14">
+            <AnimateOnScroll className="relative mx-auto w-full max-w-xl lg:mx-0 lg:max-w-none">
+              <div className="relative aspect-[4/3] w-full">
+                <div className="absolute right-0 top-0 z-10 h-[72%] w-[78%] overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200/80">
+                  <Image
+                    src={inTheNewsContent.feature.images.primary.src}
+                    alt={inTheNewsContent.feature.images.primary.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 90vw, 480px"
+                  />
+                </div>
+                <div className="absolute bottom-0 left-0 z-20 h-[52%] w-[62%] overflow-hidden rounded-2xl shadow-xl ring-1 ring-slate-200/80">
+                  <Image
+                    src={inTheNewsContent.feature.images.secondary.src}
+                    alt={inTheNewsContent.feature.images.secondary.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 70vw, 360px"
+                  />
+                </div>
+              </div>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll delay={0.1} className="lg:pl-4">
+              <h4 className="font-display text-2xl font-bold text-[#1b4332] sm:text-3xl">
+                {inTheNewsContent.feature.title}
+              </h4>
+              <div className="mt-3 h-1 w-24 rounded-full bg-[#1b4332]" />
+              <p className="mt-6 text-base leading-relaxed text-slate-600 sm:text-lg">
+                {inTheNewsContent.feature.description}
+              </p>
+              <Button
+                href={inTheNewsContent.feature.ctaHref}
+                variant="primary"
+                size="lg"
+                className="mt-8"
+              >
+                {inTheNewsContent.feature.ctaLabel}
+              </Button>
+            </AnimateOnScroll>
+          </div>
         </div>
       </div>
     </section>
