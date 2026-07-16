@@ -121,9 +121,14 @@ export const schoolLogosBottomRow: SchoolLogo[] = [
     name: "Brookdale Elementary School",
   },
   {
-    src: `${LOGO_BASE}/builta-elementary.png`,
-    alt: "Builta Elementary School logo",
+    src: `${LOGO_BASE}/builta-badgers.png`,
+    alt: "Builta Elementary School Badgers mascot logo",
     name: "Builta Elementary School",
+  },
+  {
+    src: `${LOGO_BASE}/eichelberger-elementary.png`,
+    alt: "Eichelberger Elementary School Gators logo",
+    name: "Eichelberger Elementary School",
   },
   {
     src: `${LOGO_BASE}/cowlishaw-koala.png`,
@@ -136,18 +141,13 @@ export const schoolLogosBottomRow: SchoolLogo[] = [
     name: "Ranch View Elementary School",
   },
   {
+    src: `${LOGO_BASE}/brooks-elementary.png`,
+    alt: "Brooks Elementary School Tigers mascot logo",
+    name: "Brooks Elementary School",
+  },
+  {
     src: `${LOGO_BASE}/welch-elementary.png`,
     alt: "Welch Elementary School logo",
     name: "Welch Elementary School",
-  },
-  {
-    src: `${LOGO_BASE}/welch-paw-print.png`,
-    alt: "Welch Elementary paw print logo",
-    name: "Welch Elementary School",
-  },
-  {
-    src: `${LOGO_BASE}/kennedy-eagle-logo.png`,
-    alt: "Kennedy eagle mascot logo",
-    name: "Kennedy Junior High School",
   },
 ];

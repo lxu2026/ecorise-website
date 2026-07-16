@@ -31,6 +31,7 @@ export const sitePhotoUsage = {
   aboutInTheNews: [
     "/images/about/95th-street-library.jpg",
     "/images/about/daily-herald-sign.jpg",
+    "/images/about/white-eagle-elementary.jpg",
   ],
   aboutMission: "/images/mission-tote-bag.png",
   officeHoursHero: "/images/office-hours/tote-decorating-hero.jpg",

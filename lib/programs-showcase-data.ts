@@ -32,10 +32,10 @@ export const programShowcaseCards: ProgramShowcaseCard[] = [
 ];
 
 export const missionFullText =
-  "EcoRise is founded on the belief that every student deserves access to sustainability education that brings their ideas—and their passion for the planet—to life. Through hands-on STEM learning, creative projects, and community partnerships, we help K–12 students build critical thinking, problem-solving, and leadership skills that last a lifetime. The next generation of environmental leaders is ready to make an impact—we give them the platform to do it.";
+  "EcoRise is founded on the belief that every student deserves access to sustainability education that brings their ideas—and their passion for the planet—to life. Through hands-on learning, creative projects, and community partnerships, we help K–12 students build critical thinking, problem-solving, and leadership skills that last a lifetime. The next generation of environmental leaders is ready to make an impact—we give them the platform to do it.";
 
 export const missionShortText =
-  "We empower K–12 students through hands-on sustainability education, STEM innovation, and community partnerships.";
+  "We empower K–12 students through hands-on sustainability education, creative innovation, and community partnerships.";
 
 export { missionCarouselPhotos } from "@/lib/site-photos";
 export type { MissionCarouselPhoto } from "@/lib/site-photos";

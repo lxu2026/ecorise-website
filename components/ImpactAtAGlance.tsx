@@ -10,6 +10,82 @@ import {
 } from "@/lib/homepage-data";
 import Image from "next/image";
 
+type NewsFeature = (typeof inTheNewsContent.features)[number];
+
+function NewsFeatureImages({ feature }: { feature: NewsFeature }) {
+  const { images } = feature;
+
+  if ("secondary" in images) {
+    return (
+      <div className="relative aspect-[4/3] w-full">
+        <div className="absolute right-0 top-0 z-10 h-[72%] w-[78%] overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200/80">
+          <Image
+            src={images.primary.src}
+            alt={images.primary.alt}
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 90vw, 480px"
+          />
+        </div>
+        <div className="absolute bottom-0 left-0 z-20 h-[52%] w-[62%] overflow-hidden rounded-2xl shadow-xl ring-1 ring-slate-200/80">
+          <Image
+            src={images.secondary.src}
+            alt={images.secondary.alt}
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 70vw, 360px"
+          />
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200/80">
+      <Image
+        src={images.primary.src}
+        alt={images.primary.alt}
+        fill
+        className="object-cover"
+        sizes="(max-width: 1024px) 90vw, 480px"
+      />
+    </div>
+  );
+}
+
+function NewsFeatureBlock({ feature, delay = 0 }: { feature: NewsFeature; delay?: number }) {
+  const imageFirst = feature.imagePosition === "left";
+
+  return (
+    <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
+      <AnimateOnScroll
+        delay={imageFirst ? 0 : delay}
+        className={`relative mx-auto w-full max-w-xl lg:mx-0 lg:max-w-none ${
+          imageFirst ? "lg:order-1" : "lg:order-2"
+        }`}
+      >
+        <NewsFeatureImages feature={feature} />
+      </AnimateOnScroll>
+
+      <AnimateOnScroll
+        delay={imageFirst ? delay : 0}
+        className={`${imageFirst ? "lg:order-2 lg:pl-4" : "lg:order-1 lg:pr-4"}`}
+      >
+        <h4 className="font-display text-2xl font-bold text-[#1b4332] sm:text-3xl">
+          {feature.title}
+        </h4>
+        <div className="mt-3 h-1 w-24 rounded-full bg-[#1b4332]" />
+        <p className="mt-6 text-base leading-relaxed text-slate-600 sm:text-lg">
+          {feature.description}
+        </p>
+        <Button href={feature.ctaHref} variant="primary" size="lg" className="mt-8">
+          {feature.ctaLabel}
+        </Button>
+      </AnimateOnScroll>
+    </div>
+  );
+}
+
 function ImpactCard({
   card,
   delay = 0,
@@ -76,47 +152,10 @@ export function ImpactAtAGlance() {
             </p>
           </AnimateOnScroll>
 
-          <div className="mt-12 grid grid-cols-1 items-center gap-10 lg:mt-16 lg:grid-cols-2 lg:gap-14">
-            <AnimateOnScroll className="relative mx-auto w-full max-w-xl lg:mx-0 lg:max-w-none">
-              <div className="relative aspect-[4/3] w-full">
-                <div className="absolute right-0 top-0 z-10 h-[72%] w-[78%] overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200/80">
-                  <Image
-                    src={inTheNewsContent.feature.images.primary.src}
-                    alt={inTheNewsContent.feature.images.primary.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 90vw, 480px"
-                  />
-                </div>
-                <div className="absolute bottom-0 left-0 z-20 h-[52%] w-[62%] overflow-hidden rounded-2xl shadow-xl ring-1 ring-slate-200/80">
-                  <Image
-                    src={inTheNewsContent.feature.images.secondary.src}
-                    alt={inTheNewsContent.feature.images.secondary.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 70vw, 360px"
-                  />
-                </div>
-              </div>
-            </AnimateOnScroll>
-
-            <AnimateOnScroll delay={0.1} className="lg:pl-4">
-              <h4 className="font-display text-2xl font-bold text-[#1b4332] sm:text-3xl">
-                {inTheNewsContent.feature.title}
-              </h4>
-              <div className="mt-3 h-1 w-24 rounded-full bg-[#1b4332]" />
-              <p className="mt-6 text-base leading-relaxed text-slate-600 sm:text-lg">
-                {inTheNewsContent.feature.description}
-              </p>
-              <Button
-                href={inTheNewsContent.feature.ctaHref}
-                variant="primary"
-                size="lg"
-                className="mt-8"
-              >
-                {inTheNewsContent.feature.ctaLabel}
-              </Button>
-            </AnimateOnScroll>
+          <div className="mt-12 space-y-16 lg:mt-16 lg:space-y-24">
+            {inTheNewsContent.features.map((feature, index) => (
+              <NewsFeatureBlock key={feature.title} feature={feature} delay={index * 0.1} />
+            ))}
           </div>
         </div>
       </div>

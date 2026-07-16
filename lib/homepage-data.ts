@@ -97,7 +97,7 @@ export const programs = [
   {
     title: "Community Workshops",
     description:
-      "Interactive sessions for families and educators covering composting, urban gardening, water conservation, and STEM-based environmental projects.",
+      "Interactive sessions for families and educators covering composting, urban gardening, water conservation, and hands-on environmental projects.",
     tag: "Year-round",
     gradient: "from-[#c1eb84] to-ecorise-600",
   },
@@ -156,24 +156,41 @@ export const inTheNewsContent = {
   title: "In The News",
   subtitle:
     "Our mission has been featured by local media outlets, highlighting our commitment to advancing environmental literacy and empowering the next generation of sustainability leaders in Naperville and beyond.",
-  feature: {
-    title: "Daily Herald Feature",
-    description:
-      "During our summer camp program, EcoRise was featured by the Daily Herald. The article highlighted our mission to make environmental literacy accessible and our work bringing together over 100 local youth at the 95th Street Library to design hands-on sustainability projects for the community.",
-    ctaLabel: "Read the Article",
-    ctaHref:
-      "https://www.dailyherald.com/20260713/submitted-content/napervilles-ecorise-wraps-up-free-environmental-summer-camp-for-youth/",
-    images: {
-      primary: {
-        src: "/images/about/95th-street-library.jpg",
-        alt: "95th Street Library in Naperville, where EcoRise summer camp was held",
-      },
-      secondary: {
-        src: "/images/about/daily-herald-sign.jpg",
-        alt: "Daily Herald sign",
+  features: [
+    {
+      title: "Daily Herald Feature",
+      description:
+        "During our summer camp program, EcoRise was featured by the Daily Herald. The article highlighted our mission to make environmental literacy accessible and our work bringing together over 100 local youth at the 95th Street Library to design hands-on sustainability projects for the community.",
+      ctaLabel: "Read the Article",
+      ctaHref:
+        "https://www.dailyherald.com/20260713/submitted-content/napervilles-ecorise-wraps-up-free-environmental-summer-camp-for-youth/",
+      imagePosition: "left",
+      images: {
+        primary: {
+          src: "/images/about/95th-street-library.jpg",
+          alt: "95th Street Library in Naperville, where EcoRise summer camp was held",
+        },
+        secondary: {
+          src: "/images/about/daily-herald-sign.jpg",
+          alt: "Daily Herald sign",
+        },
       },
     },
-  },
+    {
+      title: "White Eagle Elementary School Support",
+      description:
+        "EcoRise is proud to be supported by local educators in District 204. Our summer camp program was officially shared with the community in the White Eagle Elementary School newsletter to help reach local families.",
+      ctaLabel: "View the Newsletter",
+      ctaHref: "https://app.smore.com/n/mf1er-white-eagle-elementary-news",
+      imagePosition: "right",
+      images: {
+        primary: {
+          src: "/images/about/white-eagle-elementary.jpg",
+          alt: "White Eagle Elementary School in Naperville",
+        },
+      },
+    },
+  ],
 } as const;
 
 export const events = [
@@ -182,7 +199,7 @@ export const events = [
     date: "April 12, 2026",
     location: "Riverside Community Center",
     description:
-      "Student showcases, eco-vendor booths, and live STEM demonstrations open to all families.",
+      "Student showcases, eco-vendor booths, and live demonstrations open to all families.",
   },
   {
     title: "Green Dream Challenge Finals",
@@ -322,6 +339,8 @@ export const inKindDonors = [
   { name: "LUSH", logo: "/images/sponsors/lush.png", url: "https://www.lush.com" },
   { name: "Red Mango", logo: "/images/sponsors/red-mango.png", url: "https://www.redmangousa.com" },
   { name: "Egg Harbor Cafe", logo: "/images/sponsors/egg-harbor-cafe.png", url: "https://www.eggharborcafe.com" },
+  { name: "45 Degree", logo: "/images/sponsors/45-degree.png", url: "https://45degreetea.com" },
+  { name: "Sweet General", logo: "/images/sponsors/sweet-general.png", url: "https://sweetgeneral.com" },
 ] as const;
 
 /** @deprecated Use currentSponsors */

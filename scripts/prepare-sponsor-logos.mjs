@@ -67,6 +67,24 @@ const jobs = [
     skipBackgroundRemoval: true,
     normalizeCanvas: WIDE_LOGO_CANVAS,
   },
+  {
+    input: path.join(
+      assetsDir,
+      "c__Users_User_AppData_Roaming_Cursor_User_workspaceStorage_f5ec9a3fcc7ebeaf4b38d6ddf744336b_images_image-56b3d0de-f4b9-4576-a78f-e6d81629aa0c.png",
+    ),
+    output: path.resolve(root, "public/images/sponsors/45-degree.png"),
+    isBackground: (r, g, b) => r > 240 && g > 240 && b > 240,
+    normalizeCanvas: WIDE_LOGO_CANVAS,
+  },
+  {
+    input: path.join(
+      assetsDir,
+      "c__Users_User_AppData_Roaming_Cursor_User_workspaceStorage_f5ec9a3fcc7ebeaf4b38d6ddf744336b_images_Sweet_General_1_2-3c3b17db-007e-4db6-a640-ae8e4deefe5b.png",
+    ),
+    output: path.resolve(root, "public/images/sponsors/sweet-general.png"),
+    isBackground: (r, g, b) => r > 240 && g > 240 && b > 240,
+    normalizeCanvas: WIDE_LOGO_CANVAS,
+  },
 ];
 
 function removeEdgeBackground(data, width, height, isBackground) {

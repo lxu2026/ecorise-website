@@ -23,7 +23,7 @@ export const metadata = {
   },
   title: "EcoRise | Empowering Environmental Leaders",
   description:
-    "EcoRise inspires K–12 students through sustainability education, STEM innovation, and community action.",
+    "EcoRise inspires K–12 students through sustainability education, creative innovation, and community action.",
 };
 
 export default function RootLayout({

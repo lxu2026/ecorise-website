@@ -67,7 +67,7 @@ export const instructors: TeamMember[] = [
   {
     name: "Abhinav Prabhu",
     role: "Instructor",
-    bio: "Abhinav enjoys teaching STEM and sustainability through creative, hands-on learning.",
+    bio: "Abhinav enjoys teaching sustainability through creative, hands-on learning.",
   },
   {
     name: "Adhirit Chowdhary",
