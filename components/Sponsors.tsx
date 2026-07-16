@@ -275,18 +275,20 @@ function InKindSection() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`Visit ${donor.name} website`}
-              className="flex h-24 items-center justify-center rounded-2xl border border-slate-200/80 bg-white px-4 shadow-[0_2px_12px_rgba(27,67,50,0.05)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(27,67,50,0.1)] sm:h-28"
+              className="flex h-24 items-center justify-center rounded-2xl border border-slate-200/80 bg-white px-3 shadow-[0_2px_12px_rgba(27,67,50,0.05)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(27,67,50,0.1)] sm:h-28 sm:px-4"
             >
-              <Image
-                src={donor.logo}
-                alt={`${donor.name} logo`}
-                width={120}
-                height={48}
-                unoptimized
-                className={`max-h-12 w-auto max-w-[120px] object-contain ${
-                  "logoClassName" in donor ? donor.logoClassName : ""
-                }`}
-              />
+              <div className="flex h-12 w-full max-w-[8.75rem] items-center justify-center sm:h-14 sm:max-w-[9.75rem]">
+                <Image
+                  src={donor.logo}
+                  alt={`${donor.name} logo`}
+                  width={156}
+                  height={56}
+                  unoptimized
+                  className={`max-h-full max-w-full object-contain ${
+                    "logoClassName" in donor ? donor.logoClassName : ""
+                  }`}
+                />
+              </div>
             </a>
           ))}
         </div>

@@ -326,21 +326,21 @@ export const sponsorshipTiers = [
 
 export const inKindDonors = [
   { name: "MOD Pizza", logo: "/images/sponsors/mod-pizza.svg", url: "https://modpizza.com" },
-  { name: "Chicago White Sox", logo: "/images/sponsors/white-sox.png", url: "https://www.mlb.com/whitesox", logoClassName: "max-h-14 sm:max-h-16" },
+  { name: "Chicago White Sox", logo: "/images/sponsors/white-sox.png", url: "https://www.mlb.com/whitesox" },
   { name: "Kane County Cougars", logo: "/images/sponsors/kane-county-cougars.png", url: "https://www.milb.com/kane-county" },
-  { name: "Culver's", logo: "/images/sponsors/culvers.svg", url: "https://www.culvers.com" },
+  { name: "Culver's", logo: "/images/sponsors/culvers.svg", url: "https://www.culvers.com", logoClassName: "scale-110" },
   { name: "Smashburger", logo: "/images/sponsors/smashburger.svg", url: "https://smashburger.com" },
   { name: "Andy's Frozen Custard", logo: "/images/sponsors/andys-frozen-custard.png", url: "https://www.eatandys.com" },
   { name: "Avocado Theory", logo: "/images/sponsors/avocado-theory.png", url: "https://avocadotheory.com" },
   { name: "Lou Malnati's Pizzeria", logo: "/images/sponsors/lou-malnatis.png", url: "https://www.loumalnatis.com" },
-  { name: "Trader Joe's", logo: "/images/sponsors/trader-joes.png", url: "https://www.traderjoes.com", logoClassName: "max-w-[90px] sm:max-w-[100px]" },
-  { name: "zzcamellia", logo: "/images/sponsors/zzcamellia.png", url: "https://zzcamellia.com/", logoClassName: "max-w-[90px] sm:max-w-[100px]" },
+  { name: "Trader Joe's", logo: "/images/sponsors/trader-joes.png", url: "https://www.traderjoes.com", logoClassName: "scale-110" },
+  { name: "zzcamellia", logo: "/images/sponsors/zzcamellia.png", url: "https://zzcamellia.com/" },
   { name: "Insomnia Cookies", logo: "/images/sponsors/insomnia-cookies.png", url: "https://insomniacookies.com" },
   { name: "LUSH", logo: "/images/sponsors/lush.png", url: "https://www.lush.com" },
   { name: "Red Mango", logo: "/images/sponsors/red-mango.png", url: "https://www.redmangousa.com" },
   { name: "Egg Harbor Cafe", logo: "/images/sponsors/egg-harbor-cafe.png", url: "https://www.eggharborcafe.com" },
   { name: "45 Degree", logo: "/images/sponsors/45-degree.png", url: "https://45degreetea.com" },
-  { name: "Sweet General", logo: "/images/sponsors/sweet-general.png", url: "https://sweetgeneral.com" },
+  { name: "Sweet General", logo: "/images/sponsors/sweet-general.png", url: "https://sweetgeneral.com", logoClassName: "scale-110" },
 ] as const;
 
 /** @deprecated Use currentSponsors */
