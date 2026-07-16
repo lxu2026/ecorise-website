@@ -341,6 +341,7 @@ export const inKindDonors = [
   { name: "Egg Harbor Cafe", logo: "/images/sponsors/egg-harbor-cafe.png", url: "https://www.eggharborcafe.com" },
   { name: "45 Degree", logo: "/images/sponsors/45-degree.png", url: "https://45degreetea.com" },
   { name: "Sweet General", logo: "/images/sponsors/sweet-general.png", url: "https://sweetgeneral.com", logoClassName: "scale-110" },
+  { name: "Chipotle", logo: "/images/sponsors/chipotle.png", url: "https://www.chipotle.com" },
 ] as const;
 
 /** @deprecated Use currentSponsors */
