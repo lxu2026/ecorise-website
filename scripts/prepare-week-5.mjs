@@ -21,10 +21,11 @@ const week5Photos = [
     position: "centre",
   },
   {
-    src: "c__Users_User_AppData_Roaming_Cursor_User_workspaceStorage_empty-window_images_IMG_4813-39c7dde1-bab1-4494-9982-1af8101cb432.png",
+    input: "C:\\Users\\User\\Downloads\\IMG_4815.JPG",
     out: "workshop-2.jpg",
-    width: 1200,
-    height: 900,
+    aspect: 3 / 2,
+    width: 1600,
+    height: 1067,
     position: "centre",
   },
   {

@@ -283,12 +283,12 @@ export const campWeeks: CampWeek[] = [
     heroImage: "/images/summer-camp/week-5/workshop-1.jpg",
     galleryImages: [
       {
-        src: "/images/summer-camp/week-5/workshop-3.jpg",
-        alt: "Student writing and refining a Green Dream Showcase presentation at camp",
-      },
-      {
         src: "/images/summer-camp/week-5/hero-guest-speaker.jpg",
         alt: "Walter Willis of SWALCO presenting to EcoRise camp students during Session 5",
+      },
+      {
+        src: "/images/summer-camp/week-5/workshop-3.jpg",
+        alt: "Student writing and refining a Green Dream Showcase presentation at camp",
       },
       {
         src: "/images/summer-camp/week-5/workshop-engagement.jpg",

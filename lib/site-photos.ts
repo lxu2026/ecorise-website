@@ -87,8 +87,8 @@ export const sitePhotoUsage = {
     week5: {
       hero: "/images/summer-camp/week-5/workshop-1.jpg",
       gallery: [
-        "/images/summer-camp/week-5/workshop-3.jpg",
         "/images/summer-camp/week-5/hero-guest-speaker.jpg",
+        "/images/summer-camp/week-5/workshop-3.jpg",
         "/images/summer-camp/week-5/workshop-engagement.jpg",
         "/images/summer-camp/week-5/workshop-2.jpg",
       ],
