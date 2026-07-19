@@ -84,6 +84,20 @@ export const sitePhotoUsage = {
         "/images/summer-camp/week-4/brook-mcdonald.jpg",
       ],
     },
+    week5: {
+      hero: "/images/summer-camp/week-5/workshop-1.jpg",
+      gallery: [
+        "/images/summer-camp/week-5/workshop-3.jpg",
+        "/images/summer-camp/week-5/hero-guest-speaker.jpg",
+        "/images/summer-camp/week-5/workshop-engagement.jpg",
+        "/images/summer-camp/week-5/workshop-2.jpg",
+      ],
+      speakers: [
+        "/images/summer-camp/week-5/walter-willis.jpg",
+        "/images/summer-camp/week-5/laura-ellman.jpg",
+        "/images/summer-camp/week-5/briana-moore.jpg",
+      ],
+    },
   },
 } as const;
 

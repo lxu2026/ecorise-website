@@ -68,7 +68,9 @@ function SpeakerSidebar({
         </div>
 
         <h4 className="mt-3 text-center text-lg font-bold text-[#1b4332]">{speaker.name}</h4>
-        <p className="mt-0.5 text-center text-xs text-ecorise-600 sm:text-sm">{speaker.title}</p>
+        <p className="mt-0.5 whitespace-pre-line text-center text-xs text-ecorise-600 sm:text-sm">
+          {speaker.title}
+        </p>
       </div>
     );
   }
@@ -103,7 +105,7 @@ function SpeakerSidebar({
       </div>
 
       <h4 className="mt-5 text-center text-xl font-bold text-[#1b4332] sm:text-2xl">{speaker.name}</h4>
-      <p className="mt-1 text-center text-sm text-ecorise-600">{speaker.title}</p>
+      <p className="mt-1 whitespace-pre-line text-center text-sm text-ecorise-600">{speaker.title}</p>
 
       {speaker.quote ? (
         <div className="mt-5 rounded-xl bg-[#1b4332] p-5 text-center text-white">
@@ -281,14 +283,18 @@ function CampWeekSection({ week }: { week: CampWeek }) {
 
       {week.speakerPlacement === "below" ? (
         <>
-          <p className="text-base leading-relaxed text-slate-600 sm:text-lg">{week.summary}</p>
+          <p className="text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
+            {week.summary}
+          </p>
           <WeekGallery week={week} />
           <SpeakersRow week={week} />
         </>
       ) : (
         <div className="grid gap-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] lg:items-start lg:gap-10 xl:gap-12">
           <div>
-            <p className="text-base leading-relaxed text-slate-600 sm:text-lg">{week.summary}</p>
+            <p className="text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
+              {week.summary}
+            </p>
             <WeekGallery week={week} />
           </div>
           <SpeakerSidebarColumn week={week} />

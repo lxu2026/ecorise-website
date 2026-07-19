@@ -249,12 +249,12 @@ export const campWeeks: CampWeek[] = [
   {
     id: "week-5",
     week: 5,
-    shortLabel: "Circular Economy",
-    title: "Circular Economy",
+    shortLabel: "Green Dream Preparation",
+    title: "Green Dream Preparation",
     date: "July 18, 2026",
     location: "95th Street Library, Naperville",
     summary:
-      "In Session 5, students learned how a circular economy keeps materials in use through repair, reuse, and thoughtful design rather than single-use waste. After applying circular thinking to hands-on projects with camp instructors, students refined their Green Dream Showcase presentations and prepared to share their sustainability ideas with the community.",
+      "In Session 5, students prepared for the Green Dream competition with a competitive round of trivia that reviewed what they learned over the past couple of weeks. Teams then worked with camp instructors to refine their community projects and action plans, with guest speakers helping them bring their ideas to life.",
     speakerLabel: "Guest Speaker",
     speakerPlacement: "below",
     guestSpeakers: [
@@ -267,7 +267,7 @@ export const campWeeks: CampWeek[] = [
       },
       {
         name: "Laura Ellman",
-        title: "State Senator, IL 21st District",
+        title: "Illinois State Senator,\n21st District",
         talkTitle: "",
         talkDescription: "",
         photo: "/images/summer-camp/week-5/laura-ellman.jpg",
@@ -280,7 +280,26 @@ export const campWeeks: CampWeek[] = [
         photo: "/images/summer-camp/week-5/briana-moore.jpg",
       },
     ],
-    photoLabel: "Week 5 — Circular Economy",
+    heroImage: "/images/summer-camp/week-5/workshop-1.jpg",
+    galleryImages: [
+      {
+        src: "/images/summer-camp/week-5/workshop-3.jpg",
+        alt: "Student writing and refining a Green Dream Showcase presentation at camp",
+      },
+      {
+        src: "/images/summer-camp/week-5/hero-guest-speaker.jpg",
+        alt: "Walter Willis of SWALCO presenting to EcoRise camp students during Session 5",
+      },
+      {
+        src: "/images/summer-camp/week-5/workshop-engagement.jpg",
+        alt: "EcoRise camp students raising their hands during the Green Dream Preparation session",
+      },
+      {
+        src: "/images/summer-camp/week-5/workshop-2.jpg",
+        alt: "Guest speaker Briana Moore presenting to EcoRise camp students during Session 5",
+      },
+    ],
+    photoLabel: "Week 5 — Green Dream Preparation",
     photoGradient: "from-[#c1eb84] to-ecorise-500",
   },
 ];
