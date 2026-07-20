@@ -8,7 +8,7 @@ export type NavItem =
     };
 
 export const navItems: NavItem[] = [
-  { label: "Camp", href: "/summer-camp" },
+  { label: "Summer Camp", href: "/summer-camp" },
   { label: "Green Dream", href: "/green-dream-challenge" },
   { label: "Office Hours & FAQs", href: "/office-hours-faqs" },
   { label: "About Us", href: "/about" },
@@ -124,16 +124,16 @@ export const impactAtAGlanceContent = {
     "EcoRise connects students, schools, and sponsors to build a greener future—turning classroom curiosity into real-world sustainability action across our community.",
   cards: [
     {
-      value: 147,
+      value: 134,
       label: "Students Taught",
       description:
         "Young leaders inspired through camps, workshops, and hands-on sustainability experiences.",
     },
     {
-      value: 34,
+      value: 35,
       label: "Schools Represented",
       description:
-        "Students from 34 schools participated in EcoRise programs across the community.",
+        "Students from 35 schools participated in EcoRise programs across the community.",
     },
     {
       value: 3000,
@@ -144,7 +144,7 @@ export const impactAtAGlanceContent = {
         "Community support, grants, and sponsorships helping provide free environmental education programs.",
     },
     {
-      value: 41,
+      value: 48,
       label: "Student Leaders",
       description:
         "High school mentors and camp leaders empowering younger students while developing leadership skills.",
@@ -358,7 +358,7 @@ export const galleryItems = [
 
 export const footerQuickLinks = [
   { label: "Home", href: "/" },
-  { label: "Camp", href: "/summer-camp" },
+  { label: "Summer Camp", href: "/summer-camp" },
   { label: "Green Dream", href: "/green-dream-challenge" },
   { label: "Office Hours", href: "/office-hours-faqs" },
   { label: "About Us", href: "/about" },
@@ -386,7 +386,7 @@ export const footerSocialLinks = [
 /** @deprecated Use footerQuickLinks */
 export const footerLinks = {
   programs: [
-    { label: "Camp", href: "/summer-camp" },
+    { label: "Summer Camp", href: "/summer-camp" },
     { label: "Green Dream", href: "/green-dream-challenge" },
     { label: "Office Hours & FAQs", href: "/office-hours-faqs" },
   ],

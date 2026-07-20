@@ -100,7 +100,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-white/10 pt-8 text-center">
           <p className="text-sm text-white/60">
-            © {new Date().getFullYear()} EcoRise Academy. All rights reserved.
+            © {new Date().getFullYear()} EcoRise. All rights reserved.
           </p>
         </div>
       </div>

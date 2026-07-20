@@ -4,6 +4,7 @@ import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import {
   coreTeam,
   instructors,
+  volunteers,
   type TeamMember,
 } from "@/lib/team-data";
 
@@ -103,6 +104,15 @@ export function Team() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {instructors.map((member, index) => (
               <InstructorCard key={`instructor-${index}`} member={member} delay={index * 0.04} />
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-20">
+          <SectionTitle title="Volunteers" underlineClass="border-ecorise-500" />
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {volunteers.map((member, index) => (
+              <InstructorCard key={`volunteer-${index}`} member={member} delay={index * 0.04} />
             ))}
           </div>
         </div>

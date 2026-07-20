@@ -35,16 +35,16 @@ export const coreTeam: TeamMember[] = [
     photo: "/images/team/josh-mcconkey-v5.jpg",
   },
   {
-    name: "Shriya Tiwari",
-    role: "",
-    bio: "Shriya leads Green Dream and Office Hours, helping students explore sustainability and develop hands-on environmental projects.",
-    photo: "/images/team/shriya-tiwari-v3.jpg",
-  },
-  {
     name: "Taksh Chauhan",
     role: "",
     bio: "Taksh leads fundraising and partnerships, helping secure the support that makes EcoRise programs possible.",
     photo: "/images/team/taksh-chauhan-v4.jpg",
+  },
+  {
+    name: "Shriya Tiwari",
+    role: "",
+    bio: "Shriya leads Green Dream and Office Hours, helping students explore sustainability and develop hands-on environmental projects.",
+    photo: "/images/team/shriya-tiwari-v3.jpg",
   },
 ];
 
@@ -185,6 +185,16 @@ export const instructors: TeamMember[] = [
     bio: "Perlita creates a welcoming environment where students explore sustainability with confidence.",
   },
   {
+    name: "Rachel Kim",
+    role: "Instructor",
+    bio: "Rachel helps students explore sustainability through engaging lessons and hands-on activities.",
+  },
+  {
+    name: "Raghunandan Thirthamattur",
+    role: "Instructor",
+    bio: "Raghunandan encourages students to think critically about environmental challenges and take action.",
+  },
+  {
     name: "Rashmi Panuganti",
     role: "Instructor",
     bio: "Rashmi encourages students to explore environmental science through creativity and teamwork.",
@@ -210,6 +220,11 @@ export const instructors: TeamMember[] = [
     bio: "Sam helps students grow as environmental leaders through teamwork and creative problem-solving.",
   },
   {
+    name: "Siddharth Gajula",
+    role: "Instructor",
+    bio: "Siddharth inspires students to build sustainable habits through hands-on learning and mentorship.",
+  },
+  {
     name: "Simi Dawani",
     role: "Instructor",
     bio: "Simi inspires students to build greener habits and become future environmental leaders.",
@@ -223,6 +238,29 @@ export const instructors: TeamMember[] = [
     name: "Srihan Veesam",
     role: "Instructor",
     bio: "Srihan enjoys mentoring students and helping them become confident environmental leaders.",
+  },
+  {
+    name: "Zainah Haque",
+    role: "Instructor",
+    bio: "Zainah creates a supportive learning space where students explore sustainability with curiosity.",
+  },
+];
+
+export const volunteers: TeamMember[] = [
+  {
+    name: "Atharv Mishra",
+    role: "Volunteer",
+    bio: "Atharv helped pass out EcoRise fliers at the Memorial Day parade.",
+  },
+  {
+    name: "Michael Nie",
+    role: "Volunteer",
+    bio: "Michael shared EcoRise fliers with the community during the Memorial Day parade.",
+  },
+  {
+    name: "Yifan Bao",
+    role: "Volunteer",
+    bio: "Yifan joined the Memorial Day parade crew to hand out EcoRise fliers.",
   },
 ];
 

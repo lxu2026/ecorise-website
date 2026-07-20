@@ -36,7 +36,8 @@ export const campHero = {
   description:
     "Our five-part sustainability journey takes students from environmental discovery to community-ready projects through hands-on workshops, field activities, and expert mentorship.",
   registerUrl:
-    "https://docs.google.com/forms/d/1Qyo-zPQjg0JwHgR-iv1rh7OnY3IB1g0cJ0oHkbT0tWY/viewform",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfb8ECoXsXSvHCHpQqemmrbpkM1YUd8-4ovnQjgA5_v8HLELQ/viewform?usp=header",
+  registerLabel: "Join 2027 Waitlist",
   stats: [
     { value: "5", label: "Camp Weeks" },
     { value: "8", label: "Guest Speakers" },

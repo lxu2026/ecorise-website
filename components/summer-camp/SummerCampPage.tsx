@@ -341,7 +341,7 @@ export function SummerCampPage() {
                 size="lg"
                 className="px-8 py-4 text-base sm:text-lg"
               >
-                Register Now →
+                {campHero.registerLabel} →
               </Button>
             </div>
 
