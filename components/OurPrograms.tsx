@@ -28,6 +28,7 @@ export function OurPrograms() {
               fill
               quality={92}
               className="object-cover"
+              style={{ objectPosition: program.objectPosition ?? "center center" }}
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 450px"
               priority={program.title === "Summer Camp"}
             />

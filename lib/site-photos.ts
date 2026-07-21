@@ -4,21 +4,23 @@
  */
 export const sitePhotoUsage = {
   homeHeroCollage: [
-    "/images/home/hero/group-photo.jpg",
-    "/images/home/hero/tote-bag-showcase.jpg",
-    "/images/home/hero/decorating-tote.jpg",
-    "/images/home/hero/student-engagement.jpg",
-    "/images/home/hero/team-celebration.jpg",
-    "/images/home/hero/guest-speaker.jpg",
-    "/images/home/hero/camp-friends.jpg",
+    "/images/mission/classroom-activity.jpg",
+    "/images/home/hero/hero-grid-5.jpg",
+    "/images/home/hero/hero-grid-14.jpg",
+    "/images/home/hero/hero-grid-12.jpg",
+    "/images/home/hero/hero-grid-13.jpg",
+    "/images/home/hero/hero-grid-10.jpg",
+    "/images/home/hero/hero-grid-18.jpg",
+    "/images/home/hero/hero-grid-21.jpg",
+    "/images/home/hero/hero-grid-22.jpg",
   ],
   missionCarousel: [
-    "/images/mission/workshop-writing.jpg",
-    "/images/mission/students-collaborating.jpg",
-    "/images/mission/group-workshop.jpg",
+    "/images/mission/hands-raised-classroom.jpg",
+    "/images/mission/workshop-colored-pencils.jpg",
+    "/images/mission/workshop-activity-2.jpg",
   ],
   programCards: {
-    summerCamp: "/images/home/programs/summer-camp-instructor-microphone.jpg",
+    summerCamp: "/images/home/programs/summer-camp-table-collab.jpg",
     greenDream: "/images/home/programs/green-dream-tote-decorating.jpg",
     officeHours: "/images/home/programs/office-hours-study-table.jpg",
   },
@@ -89,7 +91,6 @@ export const sitePhotoUsage = {
       gallery: [
         "/images/summer-camp/week-5/hero-guest-speaker.jpg",
         "/images/summer-camp/week-5/workshop-3.jpg",
-        "/images/summer-camp/week-5/workshop-engagement.jpg",
         "/images/summer-camp/week-5/workshop-2.jpg",
       ],
       speakers: [
@@ -104,25 +105,34 @@ export const sitePhotoUsage = {
 export type MissionCarouselPhoto = {
   src: string;
   alt: string;
+  objectPosition?: string;
 };
 
 export const missionCarouselPhotos: MissionCarouselPhoto[] = [
   {
     src: sitePhotoUsage.missionCarousel[0],
-    alt: "EcoRise students writing and working together during a sustainability workshop",
+    alt: "EcoRise camp students raising their hands during a classroom session",
+    objectPosition: "65% 42%",
   },
   {
     src: sitePhotoUsage.missionCarousel[1],
-    alt: "EcoRise students collaborating on a camp activity",
+    alt: "EcoRise student working with colored pencils during a workshop",
+    objectPosition: "center 45%",
   },
   {
     src: sitePhotoUsage.missionCarousel[2],
-    alt: "EcoRise summer camp students gathered for a hands-on group workshop",
+    alt: "EcoRise students collaborating on worksheets at a workshop table",
+    objectPosition: "center 45%",
   },
 ];
 
 /** Processed files not yet assigned to a page — safe for your next uploads/swaps. */
 export const unassignedPhotos = [
+  "/images/home/hero/hero-grid-8.jpg",
+  "/images/home/hero/hero-grid-17.jpg",
+  "/images/home/hero/camp-friends-duo.jpg",
+  "/images/mission/advocacy-workshop.jpg",
+  "/images/home/programs/summer-camp-instructor-microphone.jpg",
   "/images/about-community.jpg",
   "/images/about/group-photo-hero.jpg",
   "/images/green-dream/classroom-engagement.jpg",
@@ -134,6 +144,15 @@ export const unassignedPhotos = [
   "/images/home/hero/save-turtles.jpg",
   "/images/home/hero/mentor-volunteer.jpg",
   "/images/home/hero/mentorship.jpg",
+  "/images/home/hero/team-celebration.jpg",
+  "/images/home/hero/hero-grid-4.jpg",
+  "/images/home/hero/hero-grid-9.jpg",
+  "/images/home/hero/hero-grid-11.jpg",
+  "/images/home/hero/student-presenting.jpg",
+  "/images/home/hero/student-engagement.jpg",
+  "/images/home/hero/decorating-tote.jpg",
+  "/images/home/hero/guest-speaker.jpg",
+  "/images/home/hero/camp-friends.jpg",
   "/images/summer-camp/week-1/guest-speaker-session.jpg",
   "/images/summer-camp/week-1/group-photo.jpg",
   "/images/summer-camp/week-2/group-photo.jpg",

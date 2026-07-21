@@ -137,6 +137,9 @@ function SpeakerSidebar({
 
 function WeekGallery({ week }: { week: CampWeek }) {
   if (week.heroImage && week.galleryImages && week.galleryImages.length >= 3) {
+    const sideImages = week.galleryImages.slice(0, 4);
+    const isThreeUp = sideImages.length === 3;
+
     return (
       <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-[1.25fr_1fr] sm:gap-4">
         <div className="relative aspect-[4/5] overflow-hidden rounded-2xl sm:aspect-auto sm:min-h-[320px]">
@@ -146,20 +149,33 @@ function WeekGallery({ week }: { week: CampWeek }) {
             fill
             quality={92}
             className="object-cover"
+            style={{ objectPosition: week.heroObjectPosition ?? "center center" }}
             sizes="(max-width: 640px) 100vw, 600px"
             priority={week.week === 1}
           />
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3">
-          {week.galleryImages.slice(0, 4).map((image) => (
-            <div key={image.src} className="relative aspect-square overflow-hidden rounded-xl">
+        <div className="grid grid-cols-2 gap-2 sm:gap-3">
+          {sideImages.map((image, index) => (
+            <div
+              key={image.src}
+              className={`relative overflow-hidden rounded-xl ${
+                isThreeUp && index === 2
+                  ? "col-span-2 aspect-[2/1]"
+                  : "aspect-square"
+              }`}
+            >
               <Image
                 src={image.src}
                 alt={image.alt}
                 fill
                 quality={92}
                 className="object-cover"
-                sizes="(max-width: 640px) 45vw, 300px"
+                style={{ objectPosition: image.objectPosition ?? "center center" }}
+                sizes={
+                  isThreeUp && index === 2
+                    ? "(max-width: 640px) 100vw, 300px"
+                    : "(max-width: 640px) 45vw, 300px"
+                }
               />
             </div>
           ))}
@@ -177,6 +193,7 @@ function WeekGallery({ week }: { week: CampWeek }) {
           fill
           quality={92}
           className="object-cover"
+          style={{ objectPosition: week.heroObjectPosition ?? "center center" }}
           sizes="(max-width: 1024px) 100vw, 800px"
         />
       </div>
@@ -333,7 +350,7 @@ export function SummerCampPage() {
                 size="lg"
                 className="px-8 py-4 text-base sm:text-lg"
               >
-                Explore Camp →
+                Explore Camp ↓
               </Button>
               <Button
                 href={campHero.registerUrl}

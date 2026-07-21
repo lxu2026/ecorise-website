@@ -24,7 +24,8 @@ export type CampWeek = {
   /** When "below", speakers render under the gallery (e.g. Week 5). Default: right sidebar. */
   speakerPlacement?: "sidebar" | "below";
   heroImage?: string;
-  galleryImages?: { src: string; alt: string }[];
+  galleryImages?: { src: string; alt: string; objectPosition?: string }[];
+  heroObjectPosition?: string;
   photoLabel: string;
   photoGradient: string;
 };
@@ -50,16 +51,19 @@ export const campHeroPhotos = [
     src: sitePhotoUsage.summerCampHeroCollage[0],
     alt: "EcoRise summer camp students and mentors gathered around a workshop table",
     ...threePhotoHeroCollageFrames[0],
+    objectPosition: "29% 40%",
   },
   {
     src: sitePhotoUsage.summerCampHeroCollage[1],
     alt: "Students collaborating on a sustainability activity during EcoRise camp",
     ...threePhotoHeroCollageFrames[1],
+    objectPosition: "58% 40%",
   },
   {
     src: sitePhotoUsage.summerCampHeroCollage[2],
     alt: "Students working on creative sustainability projects at EcoRise camp",
     ...threePhotoHeroCollageFrames[2],
+    objectPosition: "58% 42%",
   },
 ] as const;
 
@@ -92,6 +96,7 @@ export const campWeeks: CampWeek[] = [
       },
     ],
     heroImage: "/images/summer-camp/week-1/hero-instructor.jpg",
+    heroObjectPosition: "center 70%",
     galleryImages: [
       {
         src: "/images/summer-camp/week-1/workshop-1.jpg",
@@ -177,14 +182,17 @@ export const campWeeks: CampWeek[] = [
       },
     ],
     heroImage: "/images/summer-camp/week-3/hero-podium.jpg",
+    heroObjectPosition: "center 55%",
     galleryImages: [
       {
         src: "/images/summer-camp/week-3/week-3-hand-raised-podium.jpg",
         alt: "Student raising their hand during a guest speaker session at Session 3",
+        objectPosition: "center center",
       },
       {
         src: "/images/summer-camp/week-3/gallery-group.jpg",
         alt: "EcoRise summer camp students gathered during Session 3",
+        objectPosition: "center center",
       },
       {
         src: "/images/summer-camp/week-3/workshop-3.jpg",
@@ -255,7 +263,7 @@ export const campWeeks: CampWeek[] = [
     date: "July 18, 2026",
     location: "95th Street Library, Naperville",
     summary:
-      "In Session 5, students prepared for the Green Dream competition with a competitive round of trivia that reviewed what they learned over the past couple of weeks. Teams then worked with camp instructors to refine their community projects and action plans, with guest speakers helping them bring their ideas to life.",
+      "In Session 5, students geared up for the Green Dream competition with a lively trivia challenge that put their sustainability knowledge to the test. Teams then partnered with camp instructors to sharpen their community projects and map out clear action plans. Insights from special guest speakers capped off the day, leaving students ready to share their ideas with confidence.",
     speakerLabel: "Guest Speaker",
     speakerPlacement: "below",
     guestSpeakers: [
@@ -290,10 +298,6 @@ export const campWeeks: CampWeek[] = [
       {
         src: "/images/summer-camp/week-5/workshop-3.jpg",
         alt: "Student writing and refining a Green Dream Showcase presentation at camp",
-      },
-      {
-        src: "/images/summer-camp/week-5/workshop-engagement.jpg",
-        alt: "EcoRise camp students raising their hands during the Green Dream Preparation session",
       },
       {
         src: "/images/summer-camp/week-5/workshop-2.jpg",

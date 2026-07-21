@@ -49,7 +49,8 @@ export function MissionPhotoCarousel() {
             fill
             priority={index === 0}
             quality={95}
-            className="object-cover object-center"
+            className="object-cover"
+            style={{ objectPosition: currentPhoto.objectPosition ?? "center center" }}
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </motion.div>

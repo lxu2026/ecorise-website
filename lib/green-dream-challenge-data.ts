@@ -19,16 +19,19 @@ export const gdcHeroPhotos = [
     src: sitePhotoUsage.greenDreamChallengeHero[0],
     alt: "EcoRise students collaborating at a table during a Green Dream Challenge workshop",
     ...threePhotoHeroCollageFrames[0],
+    objectPosition: "58% 40%",
   },
   {
     src: sitePhotoUsage.greenDreamChallengeHero[1],
     alt: "Student presenting a sustainability project on paper during Green Dream Challenge",
     ...threePhotoHeroCollageFrames[1],
+    objectPosition: "center 30%",
   },
   {
     src: sitePhotoUsage.greenDreamChallengeHero[2],
     alt: "Students collaborating during a sustainability workshop",
     ...threePhotoHeroCollageFrames[2],
+    objectPosition: "58% 40%",
   },
 ] as const;
 

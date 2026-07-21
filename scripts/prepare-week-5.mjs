@@ -35,13 +35,6 @@ const week5Photos = [
     height: 900,
     position: "centre",
   },
-  {
-    src: "c__Users_User_AppData_Roaming_Cursor_User_workspaceStorage_empty-window_images_IMG_4646-49e29dbf-03bc-4912-ac49-d01490d8daf9.png",
-    out: "workshop-engagement.jpg",
-    width: 1200,
-    height: 900,
-    position: "centre",
-  },
 ];
 
 console.log("Preparing Summer Camp week 5 photos…\n");

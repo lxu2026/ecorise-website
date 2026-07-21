@@ -71,6 +71,11 @@ export const officeHoursFaqs = {
         "Register through the Green Dream Challenge sign-up form on our website. Sign up for office hours separately using the live schedule above.",
     },
     {
+      question: "What if I can't present live on August 1st?",
+      answer:
+        "No problem. A video submission option is available if you can't present in person. Videos must be submitted by July 29th.",
+    },
+    {
       question: "Still have questions?",
       answer:
         "We're here to help! Reach out to our team anytime at ecorisenfp@gmail.com—we'd love to support you on your sustainability journey.",

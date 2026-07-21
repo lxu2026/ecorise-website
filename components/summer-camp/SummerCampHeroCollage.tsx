@@ -33,7 +33,7 @@ export function SummerCampHeroCollage() {
         className="pointer-events-none absolute right-[6%] top-[44%] z-40 rounded-full border-2 border-white/90 bg-[#f2c029] px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-[#1b4332] shadow-lg sm:px-4 sm:text-xs"
         aria-hidden="true"
       >
-        Summer Camp
+        Hands-On Learning
       </div>
     </div>
   );

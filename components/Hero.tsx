@@ -66,9 +66,9 @@ export function Hero() {
 
           <motion.div
             {...fadeUp(0.12)}
-            className="flex w-full justify-center lg:justify-end"
+            className="flex w-full items-center justify-center"
           >
-            <div className="w-full max-w-md lg:max-w-[28rem]">
+            <div className="w-full max-w-lg lg:max-w-[30rem]">
               <HeroCollage />
             </div>
           </motion.div>

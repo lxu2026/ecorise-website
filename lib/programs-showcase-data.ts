@@ -5,6 +5,7 @@ export type ProgramShowcaseCard = {
   href: string;
   image: string;
   hoverDescription: string;
+  objectPosition?: string;
 };
 
 export const programShowcaseCards: ProgramShowcaseCard[] = [
@@ -12,6 +13,7 @@ export const programShowcaseCards: ProgramShowcaseCard[] = [
     title: "Summer Camp",
     href: "/summer-camp",
     image: sitePhotoUsage.programCards.summerCamp,
+    objectPosition: "62% 42%",
     hoverDescription:
       "Five weeks of hands-on sustainability workshops, field activities, and guest speakers for grades K–8. Students explore local ecosystems, build environmental leadership skills, and cap the journey at the Green Dream Showcase.",
   },
@@ -19,6 +21,7 @@ export const programShowcaseCards: ProgramShowcaseCard[] = [
     title: "Green Dream",
     href: "/green-dream-challenge",
     image: sitePhotoUsage.programCards.greenDream,
+    objectPosition: "center 35%",
     hoverDescription:
       "Students pitch bold environmental ideas, receive expert feedback, and compete for resources to turn advocacy and innovation projects into real community impact. Compete solo or in teams of up to three.",
   },
@@ -26,6 +29,7 @@ export const programShowcaseCards: ProgramShowcaseCard[] = [
     title: "Office Hours",
     href: "/office-hours-faqs",
     image: sitePhotoUsage.programCards.officeHours,
+    objectPosition: "center 40%",
     hoverDescription:
       "Drop in for personalized mentorship on your sustainability project. Check our live schedule for drop-in sessions at local libraries—spots are first-come, first-served.",
   },

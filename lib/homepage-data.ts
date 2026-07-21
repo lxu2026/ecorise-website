@@ -30,52 +30,49 @@ export const heroContent = {
 
 export const heroCollagePhotos = [
   {
-    src: "/images/home/hero/group-photo.jpg",
-    alt: "EcoRise summer camp group photo with City of Naperville Sustainability",
-    className: "left-0 top-0 z-20 h-[46%] w-[62%]",
+    src: "/images/mission/classroom-activity.jpg",
+    alt: "EcoRise camp students smiling together in front of wooden doors after a workshop",
     objectPosition: "center center",
   },
   {
-    src: "/images/home/hero/tote-bag-showcase.jpg",
-    alt: "Student proudly showing a hand-decorated reusable tote bag",
-    className: "right-0 top-[4%] z-30 h-[28%] w-[40%]",
-    objectPosition: "center center",
-    rotate: 2,
+    src: "/images/home/hero/hero-grid-5.jpg",
+    alt: "EcoRise students smiling together at a workshop table",
+    objectPosition: "58% 40%",
   },
   {
-    src: "/images/home/hero/decorating-tote.jpg",
-    alt: "Student decorating a reusable tote bag with sustainability artwork",
-    className: "right-[2%] top-[34%] z-20 h-[30%] w-[44%]",
-    objectPosition: "center center",
-    rotate: -1.5,
+    src: "/images/home/hero/hero-grid-14.jpg",
+    alt: "EcoRise camp students posing together during a group session",
+    objectPosition: "center 42%",
   },
   {
-    src: "/images/home/hero/student-engagement.jpg",
-    alt: "Student raising their hand during an EcoRise camp session",
-    className: "left-[4%] top-[48%] z-30 h-[24%] w-[34%]",
-    objectPosition: "center center",
-    rotate: -2,
+    src: "/images/home/hero/hero-grid-12.jpg",
+    alt: "EcoRise mentor guiding students through a hands-on workshop activity",
+    objectPosition: "60% 40%",
   },
   {
-    src: "/images/home/hero/team-celebration.jpg",
-    alt: "Students celebrating together with a group high-five",
-    className: "left-[38%] top-[58%] z-10 h-[26%] w-[36%]",
-    objectPosition: "center center",
-    rotate: 1.5,
+    src: "/images/home/hero/hero-grid-13.jpg",
+    alt: "EcoRise mentor and students smiling with a handmade EcoRise poster",
+    objectPosition: "center 40%",
   },
   {
-    src: "/images/home/hero/guest-speaker.jpg",
-    alt: "Guest speaker presenting to EcoRise summer camp students",
-    className: "right-0 top-[66%] z-20 h-[24%] w-[38%]",
-    objectPosition: "center center",
-    rotate: 2.5,
+    src: "/images/home/hero/hero-grid-10.jpg",
+    alt: "EcoRise campers collaborating during a summer workshop",
+    objectPosition: "58% 40%",
   },
   {
-    src: "/images/home/hero/camp-friends.jpg",
-    alt: "EcoRise camp students smiling together",
-    className: "left-0 top-[74%] z-30 h-[22%] w-[34%]",
+    src: "/images/home/hero/hero-grid-18.jpg",
+    alt: "EcoRise camper holding a handmade recycle poster",
     objectPosition: "center center",
-    rotate: -1,
+  },
+  {
+    src: "/images/home/hero/hero-grid-21.jpg",
+    alt: "EcoRise campers gathered around a laptop with a See Green. Live Green. Protect Naperville poster",
+    objectPosition: "58% 42%",
+  },
+  {
+    src: "/images/home/hero/hero-grid-22.jpg",
+    alt: "EcoRise teens collaborating at a workshop table, student in a striped shirt gesturing",
+    objectPosition: "55% 42%",
   },
 ] as const;
 
@@ -124,7 +121,7 @@ export const impactAtAGlanceContent = {
     "EcoRise connects students, schools, and sponsors to build a greener future—turning classroom curiosity into real-world sustainability action across our community.",
   cards: [
     {
-      value: 134,
+      value: 149,
       label: "Students Taught",
       description:
         "Young leaders inspired through camps, workshops, and hands-on sustainability experiences.",
