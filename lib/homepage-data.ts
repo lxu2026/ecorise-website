@@ -339,6 +339,7 @@ export const inKindDonors = [
   { name: "45 Degree", logo: "/images/sponsors/45-degree.png", url: "https://45degreetea.com" },
   { name: "Sweet General", logo: "/images/sponsors/sweet-general.png", url: "https://sweetgeneral.com", logoClassName: "scale-110" },
   { name: "Chipotle", logo: "/images/sponsors/chipotle.png", url: "https://www.chipotle.com" },
+  { name: "Paisans Pizzeria", logo: "/images/sponsors/paisans.png", url: "https://www.paisanspizza.com" },
 ] as const;
 
 /** @deprecated Use currentSponsors */

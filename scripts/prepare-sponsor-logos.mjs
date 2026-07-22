@@ -94,6 +94,15 @@ const jobs = [
     isBackground: (r, g, b) => r < 35 && g < 35 && b < 35,
     normalizeCanvas: WIDE_LOGO_CANVAS,
   },
+  {
+    input: path.join(
+      assetsDir,
+      "c__Users_User_AppData_Roaming_Cursor_User_workspaceStorage_empty-window_images_Paisans-Logo__8_-9e931c65-56dd-4f0c-b2eb-e2049700cc5d.png",
+    ),
+    output: path.resolve(root, "public/images/sponsors/paisans.png"),
+    isBackground: (r, g, b) => r < 35 && g < 35 && b < 35,
+    normalizeCanvas: WIDE_LOGO_CANVAS,
+  },
 ];
 
 function removeEdgeBackground(data, width, height, isBackground) {
