@@ -121,7 +121,7 @@ export const impactAtAGlanceContent = {
     "EcoRise connects students, schools, and sponsors to build a greener future—turning classroom curiosity into real-world sustainability action across our community.",
   cards: [
     {
-      value: 149,
+      value: 162,
       label: "Students Taught",
       description:
         "Young leaders inspired through camps, workshops, and hands-on sustainability experiences.",
@@ -141,7 +141,7 @@ export const impactAtAGlanceContent = {
         "Community support, grants, and sponsorships helping provide free environmental education programs.",
     },
     {
-      value: 48,
+      value: 54,
       label: "Student Leaders",
       description:
         "High school mentors and camp leaders empowering younger students while developing leadership skills.",

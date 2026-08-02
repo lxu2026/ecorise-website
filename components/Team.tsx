@@ -2,7 +2,8 @@ import Image from "next/image";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import {
-  coreTeam,
+  directorTeam,
+  executiveTeam,
   instructors,
   volunteers,
   type TeamMember,
@@ -24,7 +25,13 @@ function SectionTitle({
   );
 }
 
-function LeaderCard({ member, delay = 0 }: { member: TeamMember; delay?: number }) {
+function LeaderCard({
+  member,
+  delay = 0,
+}: {
+  member: TeamMember;
+  delay?: number;
+}) {
   return (
     <AnimateOnScroll delay={delay} className="h-full">
       <article className="flex h-full flex-col gap-4">
@@ -46,10 +53,17 @@ function LeaderCard({ member, delay = 0 }: { member: TeamMember; delay?: number 
             className="rounded-xl shadow-sm"
           />
         )}
-        <h4 className="text-xl font-bold text-[#1b4332]">{member.name}</h4>
-        <p className="text-left text-sm leading-relaxed text-slate-600">
-          {member.bio}
-        </p>
+        <div>
+          <h4 className="text-xl font-bold text-[#1b4332]">{member.name}</h4>
+          {member.role ? (
+            <p className="mt-1 text-sm font-medium text-ecorise-600">{member.role}</p>
+          ) : null}
+          {member.bio ? (
+            <p className="mt-3 text-left text-sm leading-relaxed text-slate-600">
+              {member.bio}
+            </p>
+          ) : null}
+        </div>
       </article>
     </AnimateOnScroll>
   );
@@ -91,11 +105,30 @@ export function Team() {
           </p>
         </AnimateOnScroll>
 
-        <div className="mb-20">
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {coreTeam.map((member, index) => (
-              <LeaderCard key={`core-team-${index}`} member={member} delay={index * 0.08} />
-            ))}
+        <div className="mb-20 space-y-16">
+          <div>
+            <SectionTitle title="Executives" underlineClass="border-ecorise-500" />
+            <div className="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+              {executiveTeam.map((member, index) => (
+                <LeaderCard
+                  key={`executive-${member.name}`}
+                  member={member}
+                  delay={index * 0.08}
+                />
+              ))}
+            </div>
+          </div>
+          <div>
+            <SectionTitle title="Directors" underlineClass="border-ecorise-500" />
+            <div className="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+              {directorTeam.map((member, index) => (
+                <LeaderCard
+                  key={`director-${member.name}`}
+                  member={member}
+                  delay={index * 0.08}
+                />
+              ))}
+            </div>
           </div>
         </div>
 
