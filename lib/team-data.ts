@@ -11,41 +11,41 @@ export const executiveTeam: TeamMember[] = [
   {
     name: "Evan Xu",
     role: "Founder & President",
-    bio: "Evan founded EcoRise with a passion for environmental education and community building. He leads the organization's vision and partnerships to connect schools, sponsors, and volunteers, and create meaningful opportunities for young people to take action.",
+    bio: "Evan founded EcoRise with a passion for environmental education and community building. He leads the organization's vision and partnerships to connect schools, sponsors, and volunteers with opportunities for young people to take action.",
     photo: "/images/team/evan-xu-v2.jpg",
   },
   {
     name: "Shawn Chen",
     role: "Vice President of Operations",
-    bio: "Shawn oversees day-to-day operations that keep EcoRise programs running smoothly. He coordinates schedules, logistics, and session planning so every camp and workshop is organized, engaging, and memorable for students.",
+    bio: "Shawn oversees day-to-day operations that keep EcoRise programs running smoothly. He coordinates schedules, logistics, and session planning so every camp and workshop stays organized for students.",
     photo: "/images/team/shawn-chen.jpg",
   },
   {
     name: "Josh McConkey",
     role: "Vice President of Marketing",
-    bio: "Josh oversees marketing and brand strategy for EcoRise, managing outreach campaigns and public engagement. He helps grow the organization's community footprint and share its mission with schools, families, and partners.",
+    bio: "Josh oversees marketing and brand strategy for EcoRise, managing outreach campaigns and public engagement to grow the organization's community footprint.",
     photo: "/images/team/josh-mcconkey-v5.jpg",
   },
 ];
 
 export const directorTeam: TeamMember[] = [
   {
+    name: "Andrew Wu",
+    role: "Director of Outreach",
+    bio: "Andrew leads outreach for EcoRise, connecting schools, families, and local partners. He grows the organization's community presence and helps more students get involved.",
+    photo: "/images/team/andrew-wu.jpg",
+  },
+  {
     name: "Taksh Chauhan",
     role: "Director of Fundraising",
-    bio: "Taksh leads fundraising and sponsor partnerships that make EcoRise programs possible. He builds relationships with donors and community partners to secure the support students need to learn and lead.",
+    bio: "Taksh leads fundraising and sponsor partnerships that make EcoRise programs possible. He builds donor relationships to secure the support students need to learn and lead.",
     photo: "/images/team/taksh-chauhan-v4.jpg",
   },
   {
     name: "Shriya Tiwari",
     role: "Director of Programs",
-    bio: "Shriya leads EcoRise programs including Green Dream and Office Hours. She helps students explore sustainability, develop hands-on environmental projects, and grow as confident young leaders.",
+    bio: "Shriya leads EcoRise programs including Green Dream and Office Hours. She helps students explore sustainability and grow through hands-on environmental projects.",
     photo: "/images/team/shriya-tiwari-v3.jpg",
-  },
-  {
-    name: "Andrew Wu",
-    role: "Director of Community Engagement",
-    bio: "Andrew builds community partnerships that connect EcoRise with schools and local organizations, helping students take action in their communities.",
-    photo: "/images/team/andrew-wu.jpg",
   },
 ];
 
