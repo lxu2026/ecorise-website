@@ -6,6 +6,15 @@ const ASSETS =
   "C:\\Users\\User\\.cursor\\projects\\c-ecorise-website\\assets";
 
 function focusOffset(position, axis) {
+  if (typeof position === "number" && Number.isFinite(position)) {
+    return Math.min(1, Math.max(0, position));
+  }
+  if (typeof position === "object" && position) {
+    const v = axis === "x" ? position.x : position.y;
+    if (typeof v === "number" && Number.isFinite(v)) {
+      return Math.min(1, Math.max(0, v));
+    }
+  }
   const map = {
     centre: 0.5,
     center: 0.5,
@@ -38,6 +47,8 @@ export async function processPhoto({
   fit = "cover",
   /** Shrink foreground in contain mode (e.g. 0.85 = 15% padding). Default 1. */
   scale = 1,
+  /** Zoom into cover crop (>1 = tighter, less empty wall). Default 1. */
+  zoom = 1,
   normalize = false,
   brightness = 1,
   rotate = true,
@@ -103,6 +114,17 @@ export async function processPhoto({
       top = Math.round((srcH - cropH) * focusOffset(position, "y"));
     }
 
+    if (zoom > 1) {
+      const zW = Math.max(1, Math.round(cropW / zoom));
+      const zH = Math.max(1, Math.round(cropH / zoom));
+      left += Math.round((cropW - zW) * focusOffset(position, "x"));
+      top += Math.round((cropH - zH) * focusOffset(position, "y"));
+      cropW = zW;
+      cropH = zH;
+      left = Math.min(Math.max(0, left), Math.max(0, srcW - cropW));
+      top = Math.min(Math.max(0, top), Math.max(0, srcH - cropH));
+    }
+
     pipeline = sharp(input);
     if (rotate) pipeline = pipeline.rotate();
     if (rotateAngle) pipeline = pipeline.rotate(rotateAngle);
@@ -113,9 +135,9 @@ export async function processPhoto({
     let outW = cropW;
     let outH = cropH;
     if (width && height) {
+      // Crop already applied via extract — just scale to output size
       pipeline = pipeline.resize(width, height, {
-        fit: "cover",
-        position,
+        fit: "fill",
         kernel: sharp.kernel.lanczos3,
       });
       outW = width;

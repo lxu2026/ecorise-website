@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Green Dream Challenge | EcoRise",
   description:
-    "Create solutions for a more sustainable future with EcoRise. Compete solo or in teams of up to 3 in Advocacy or Innovation paths.",
+    "Recap of EcoRise Green Dream Challenge 2026. Students presented sustainability ideas, earned awards for environmental projects, and celebrated community impact at Benedictine University.",
 };
 
 export default function GreenDreamChallengeRoutePage() {

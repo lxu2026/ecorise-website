@@ -1,11 +1,14 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
+import { AnimatedNumber } from "@/components/ui/AnimatedCounter";
 import {
   officeHoursContact,
   officeHoursFaqs,
   officeHoursHero,
+  officeHoursPolicy,
   officeHoursSchedule,
+  officeHoursTotal,
 } from "@/lib/office-hours-faqs-data";
 import { sitePhotoUsage } from "@/lib/site-photos";
 import Image from "next/image";
@@ -22,6 +25,20 @@ function ChevronIcon({ open }: { open: boolean }) {
       aria-hidden="true"
     >
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+    </svg>
+  );
+}
+
+function PolicyCheckIcon() {
+  return (
+    <svg
+      className="mt-0.5 h-4 w-4 shrink-0 text-[#ca8a04]"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
     </svg>
   );
 }
@@ -103,6 +120,18 @@ export function OfficeHoursFaqsPage() {
               {officeHoursSchedule.title}
             </h2>
             <p className="max-w-3xl text-lg text-slate-600">{officeHoursSchedule.description}</p>
+
+            <div className="mt-8 inline-flex flex-col items-center rounded-2xl border border-[#1b4332]/10 bg-ecorise-mint/40 px-10 py-6 shadow-sm">
+              <AnimatedNumber
+                value={officeHoursTotal.value}
+                className="font-display text-5xl font-extrabold tracking-tight text-[#1b4332] md:text-6xl"
+                ariaLabel={`${officeHoursTotal.value} ${officeHoursTotal.label}`}
+              />
+              <span className="mt-1 text-sm font-semibold uppercase tracking-wider text-[#315630]">
+                {officeHoursTotal.label}
+              </span>
+              <p className="mt-2 max-w-xs text-sm text-slate-600">{officeHoursTotal.description}</p>
+            </div>
           </div>
 
           <div className="overflow-hidden rounded-3xl border border-[#1b4332]/10 bg-white shadow-xl">
@@ -147,6 +176,50 @@ export function OfficeHoursFaqsPage() {
             </a>
             .
           </p>
+        </div>
+      </section>
+
+      <section id="office-hours-policy" className="relative overflow-hidden bg-white py-16">
+        <div className="absolute right-16 top-16 -z-10 h-64 w-64 rounded-full bg-[#1b4332]/5" />
+        <div className="absolute bottom-16 left-16 -z-10 h-72 w-72 rounded-full bg-[#1b4332]/5" />
+
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mb-12 flex flex-col items-center text-center">
+            <div className="mb-3 inline-flex items-center rounded-full bg-[#1b4332]/5 px-4 py-2">
+              <span className="font-semibold text-[#1b4332]">{officeHoursPolicy.eyebrow}</span>
+            </div>
+            <h2 className="mb-4 text-4xl font-bold text-[#1b4332] md:text-5xl">
+              {officeHoursPolicy.title}
+            </h2>
+            <p className="max-w-3xl text-lg text-slate-600">{officeHoursPolicy.description}</p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {officeHoursPolicy.cards.map((card) => (
+              <article
+                key={card.number}
+                className="rounded-2xl border border-[#1b4332]/10 bg-white p-6 shadow-md md:p-8"
+              >
+                <div className="mb-4 flex items-start gap-3">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#1b4332] text-sm font-bold text-white">
+                    {card.number}
+                  </span>
+                  <h3 className="pt-1 text-xl font-bold text-[#1b4332]">{card.title}</h3>
+                </div>
+                <p className="mb-4 leading-relaxed text-slate-600">{card.intro}</p>
+                <ul className="space-y-3">
+                  {card.bullets.map((bullet) => (
+                    <li key={bullet} className="flex items-start gap-3 text-slate-600">
+                      <PolicyCheckIcon />
+                      <span className="leading-relaxed">{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+
+          <p className="mt-10 text-center text-sm text-slate-500">{officeHoursPolicy.footer}</p>
         </div>
       </section>
 
