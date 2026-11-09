@@ -83,6 +83,23 @@ export const sitePhotoUsage = {
     "/images/about/white-eagle-elementary.jpg",
   ],
   aboutMission: "/images/mission-tote-bag.png",
+  aboutMissionShanti: [
+    "/images/about/mission-shanti/booth-team.jpg",
+    "/images/about/mission-shanti/booth-demo.jpg",
+    "/images/about/mission-shanti/booth-conversation.jpg",
+    "/images/about/mission-shanti/youth-conversation.jpg",
+  ],
+  aboutFinanceSummit: [
+    "/images/about/finance-summit/summit-room-v2.jpg",
+    "/images/about/finance-summit/pitch.jpg",
+    "/images/about/finance-summit/neuqua-team.jpg",
+  ],
+  aboutNveco: [
+    "/images/about/nveco/classroom-visit.jpg",
+    "/images/about/nveco/presenters.jpg",
+    "/images/about/nveco/taboo-game.jpg",
+    "/images/about/nveco/green-dream.jpg",
+  ],
   officeHoursHero: "/images/office-hours/tote-decorating-hero.jpg",
   summerCampHeroCollage: [
     "/images/summer-camp/hero/group-at-table.jpg",

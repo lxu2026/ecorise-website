@@ -15,16 +15,16 @@ export const executiveTeam: TeamMember[] = [
     photo: "/images/team/evan-xu-v2.jpg",
   },
   {
+    name: "Josh McConkey",
+    role: "Vice President of Marketing",
+    bio: "Josh oversees marketing and brand strategy for EcoRise, managing outreach campaigns and public engagement to grow the organization's community footprint.",
+    photo: "/images/team/josh-mcconkey-v6.jpg",
+  },
+  {
     name: "Shawn Chen",
     role: "Vice President of Operations",
     bio: "Shawn oversees day-to-day operations that keep EcoRise programs running smoothly. He coordinates schedules, logistics, and session planning so every camp and workshop stays organized for students.",
     photo: "/images/team/shawn-chen.jpg",
-  },
-  {
-    name: "Josh McConkey",
-    role: "Vice President of Marketing",
-    bio: "Josh oversees marketing and brand strategy for EcoRise, managing outreach campaigns and public engagement to grow the organization's community footprint.",
-    photo: "/images/team/josh-mcconkey-v5.jpg",
   },
 ];
 

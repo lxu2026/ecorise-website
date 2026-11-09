@@ -121,16 +121,16 @@ export const impactAtAGlanceContent = {
     "EcoRise connects students, schools, and sponsors to build a greener future—turning classroom curiosity into real-world sustainability action across our community.",
   cards: [
     {
-      value: 162,
+      value: 257,
       label: "Students Taught",
       description:
         "Young leaders inspired through camps, workshops, and hands-on sustainability experiences.",
     },
     {
-      value: 35,
+      value: 37,
       label: "Schools Represented",
       description:
-        "Students from 35 schools participated in EcoRise programs across the community.",
+        "Students from 37 schools participated in EcoRise programs across the community.",
     },
     {
       value: 3000,
@@ -141,7 +141,7 @@ export const impactAtAGlanceContent = {
         "Community support, grants, and sponsorships helping provide free environmental education programs.",
     },
     {
-      value: 54,
+      value: 58,
       label: "Student Leaders",
       description:
         "High school mentors and camp leaders empowering younger students while developing leadership skills.",
@@ -360,6 +360,7 @@ export const footerQuickLinks = [
   { label: "Green Dream", href: "/green-dream-challenge" },
   { label: "Office Hours", href: "/office-hours-faqs" },
   { label: "About Us", href: "/about" },
+  { label: "Community", href: "/community" },
   { label: "Sponsors", href: "/sponsors" },
 ] as const;
 
@@ -391,6 +392,7 @@ export const footerLinks = {
   about: [
     { label: "About Us", href: "/about" },
     { label: "Our Mission", href: "/about#mission" },
+    { label: "In the Community", href: "/community" },
     { label: "Our Team", href: "/about#team" },
   ],
   connect: [

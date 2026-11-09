@@ -1,4 +1,5 @@
 import { AboutMissionSection } from "@/components/about/AboutMissionSection";
+import { CommunityPreview } from "@/components/about/CommunityPreview";
 import { ImpactAtAGlance } from "@/components/ImpactAtAGlance";
 import { Team } from "@/components/Team";
 import { sitePhotoUsage } from "@/lib/site-photos";
@@ -51,6 +52,8 @@ export function AboutPageContent() {
       <AboutMissionSection />
 
       <ImpactAtAGlance />
+
+      <CommunityPreview />
 
       <Team />
     </>

@@ -37,8 +37,8 @@ export function OurPrograms() {
 
             <div className="absolute inset-0 bg-black/65 opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100" />
 
-            <div className="absolute inset-x-0 top-0 p-6 sm:p-7">
-              <h4 className="font-display text-3xl font-bold leading-tight text-white transition-colors duration-300 group-hover:text-white/85 group-focus-visible:text-white/85 sm:text-4xl">
+            <div className="absolute inset-x-0 top-0 p-6 transition-opacity duration-300 group-hover:opacity-0 group-focus-visible:opacity-0 sm:p-7">
+              <h4 className="font-display text-3xl font-bold leading-tight text-white sm:text-4xl">
                 {program.title}
               </h4>
             </div>
