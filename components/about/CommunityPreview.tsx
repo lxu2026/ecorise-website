@@ -51,15 +51,22 @@ export function CommunityPreview() {
                     <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#315630]">
                       {recap.eyebrow}
                     </p>
-                    <h3 className="mt-2 font-display text-xl font-bold text-[#1b4332] transition-colors group-hover:text-ecorise-600">
+                    <h3 className="mt-2 min-h-[2.5em] font-display text-xl font-bold leading-[1.25] text-[#1b4332] transition-colors group-hover:text-ecorise-600">
                       {recap.title}
                     </h3>
-                    <p className="mt-2 text-sm text-slate-500">{recap.location}</p>
-                    {recap.studentsReached ? (
-                      <p className="mt-3 text-sm font-semibold text-[#315630]">
-                        {recap.studentsReached}+ Students
-                      </p>
-                    ) : null}
+                    <div className="mt-3 space-y-1">
+                      {recap.date ? (
+                        <time className="block text-sm font-semibold leading-5 text-[#1b4332]">
+                          {recap.date}
+                        </time>
+                      ) : null}
+                      <p className="text-sm leading-5 text-slate-500">{recap.location}</p>
+                      {recap.studentsReached ? (
+                        <p className="pt-2 text-sm font-semibold leading-5 text-[#315630]">
+                          {recap.studentsReached}+ Students
+                        </p>
+                      ) : null}
+                    </div>
                     <span className="mt-auto pt-4 text-sm font-semibold text-[#315630]">
                       Read the recap
                     </span>

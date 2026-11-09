@@ -18,7 +18,7 @@ export const executiveTeam: TeamMember[] = [
     name: "Josh McConkey",
     role: "Vice President of Marketing",
     bio: "Josh oversees marketing and brand strategy for EcoRise, managing outreach campaigns and public engagement to grow the organization's community footprint.",
-    photo: "/images/team/josh-mcconkey-v6.jpg",
+    photo: "/images/team/josh-mcconkey-v7.jpg",
   },
   {
     name: "Shawn Chen",

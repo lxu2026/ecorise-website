@@ -25,31 +25,6 @@ export const communityRecapsContent = {
 
 export const communityRecaps: CommunityRecap[] = [
   {
-    id: "finance-summit",
-    eyebrow: "Event Recap",
-    title: "Neuqua Valley Finance Summit",
-    location: "Neuqua Valley High School",
-    studentsReached: 50,
-    paragraphs: [
-      "EcoRise joined the Neuqua Valley Finance Summit to share our journey, results from past programs, and ways students can get involved.",
-      "We met peers looking to join and student organizations interested in working together.",
-    ],
-    photos: [
-      {
-        src: sitePhotoUsage.aboutFinanceSummit[0],
-        alt: "EcoRise presenters speaking at the Neuqua Valley Finance Summit, with the EcoRise slide behind them and students seated in the audience",
-      },
-      {
-        src: sitePhotoUsage.aboutFinanceSummit[1],
-        alt: "An EcoRise presenter giving the Finance Summit pitch beside a slide about the mission, impact, and volunteer opportunities",
-      },
-      {
-        src: sitePhotoUsage.aboutFinanceSummit[2],
-        alt: "Two EcoRise presenters in suits standing in front of the Neuqua Valley crest",
-      },
-    ],
-  },
-  {
     id: "mission-shanti-2026",
     eyebrow: "Event Recap",
     title: "Mission Shanti Passion Project Networking Fair",
@@ -88,6 +63,7 @@ export const communityRecaps: CommunityRecap[] = [
     id: "nveco-talk",
     eyebrow: "Event Recap",
     title: "NVeco Talk",
+    date: "Thursday, November 5, 2026",
     location: "Neuqua Valley High School",
     studentsReached: 25,
     paragraphs: [
@@ -114,6 +90,32 @@ export const communityRecaps: CommunityRecap[] = [
         src: sitePhotoUsage.aboutNveco[3],
         alt: "An EcoRise presenter speaking to the class with the Green Dream Challenge slide behind him",
         objectPosition: "center center",
+      },
+    ],
+  },
+  {
+    id: "finance-summit",
+    eyebrow: "Event Recap",
+    title: "Neuqua Valley Finance Summit",
+    date: "Sunday, November 8, 2026",
+    location: "Neuqua Valley High School",
+    studentsReached: 50,
+    paragraphs: [
+      "EcoRise was invited to speak at the Neuqua Valley Finance Summit. We shared our journey, results from past programs, and ways students can get involved.",
+      "We met peers looking to join and student organizations interested in working together.",
+    ],
+    photos: [
+      {
+        src: sitePhotoUsage.aboutFinanceSummit[0],
+        alt: "EcoRise presenters speaking at the Neuqua Valley Finance Summit, with the EcoRise slide behind them and students seated in the audience",
+      },
+      {
+        src: sitePhotoUsage.aboutFinanceSummit[1],
+        alt: "An EcoRise presenter giving the Finance Summit pitch beside a slide about the mission, impact, and volunteer opportunities",
+      },
+      {
+        src: sitePhotoUsage.aboutFinanceSummit[2],
+        alt: "Two EcoRise presenters in suits standing in front of the Neuqua Valley crest",
       },
     ],
   },
